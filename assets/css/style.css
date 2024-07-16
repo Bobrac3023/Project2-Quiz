@@ -6,11 +6,14 @@
 }
 
 .h1styling{
-    background-color: blue;
+    background-color: bisque;
+    /* add a box shadow to seperate header from body element*/
+    box-shadow: 0 2px 2px black;
+
 }
 
 body {
-    background-color:aquamarine;
+    background-color:aliceblue;
 }
 
 /* Make Main element take up surplus space and push footer down*/
