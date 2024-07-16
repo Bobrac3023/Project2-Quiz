@@ -1,0 +1,19 @@
+/* setting to overide default browser settings*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Set main element take up surplus space and push footer down*/
+main {
+    flex: 1 0 auto;
+    margin-top: auto;
+}
