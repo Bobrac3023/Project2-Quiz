@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+/* this section is to make Main element take up surplus space and push footer down*/
+main {
+    flex: 1 0 auto;
+    margin-top: auto;
+}
+
+
+body {
+    background-color: rgb(216, 196, 255);
+}
 
 ul {
     list-style-type: none;
