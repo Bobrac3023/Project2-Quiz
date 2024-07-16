@@ -7,7 +7,6 @@
 
 .h1styling {
     background-color: bisque;
-    display: flex;
     align-items: center;
     /* add a box shadow to seperate header from body element*/
     box-shadow: 0 2px 2px black;
