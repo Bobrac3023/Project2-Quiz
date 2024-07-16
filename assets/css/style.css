@@ -4,24 +4,28 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /* styling the H1 header element*/
 .h1styling {
+    text-align: center;
     background-color: bisque;
     /* add a box shadow to seperate header from body element*/
     box-shadow: 0 2px 2px black;
-    padding-left: 38%;
+
 }
 
 /* Naigation bar  styling*/
 .navbar {
-    background-color:coral;
+    background-color: coral;
     list-style-type: none;
-    text-align:center;
+    text-align: center;
     padding: 0;
     margin: 0;
 }
-.navbar li{
-    display:inline-block;
+
+/* Naigation list-items  styling*/
+.navbar li {
+    display: inline-block;
     font-size: 20px;
     padding: 20px;
 }
@@ -40,14 +44,20 @@ main {
 
 /* footer styling*/
 .nav {
-    background-color:coral;
+    background-color: coral;
     list-style-type: none;
-    text-align:center;
+    text-align: center;
     padding: 0;
     margin: 0;
 }
-.nav li{
-    display:inline-block;
+
+/* footer list items styling*/
+.nav li {
+    display: inline-block;
     font-size: 20px;
     padding: 20px;
+}
+
+.footerp2 {
+    text-align: center;
 }
