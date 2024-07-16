@@ -12,20 +12,19 @@
     padding-left: 38%;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: aquamarine;
-}
-
-/* Remove bullets */
-ul {
+/* Naigation bar  styling*/
+.navbar {
+    background-color:coral;
     list-style-type: none;
-    margin: 0;
+    text-align:center;
     padding: 0;
+    margin: 0;
 }
-
+.navbar li{
+    display:inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
 
 body {
     background-color: aliceblue;
@@ -39,8 +38,16 @@ main {
 
 
 
-/* Set main element take up surplus space and push footer down*/
-main {
-    flex: 1 0 auto;
-    margin-top: auto;
+/* footer styling*/
+.nav {
+    background-color:coral;
+    list-style-type: none;
+    text-align:center;
+    padding: 0;
+    margin: 0;
+}
+.nav li{
+    display:inline-block;
+    font-size: 20px;
+    padding: 20px;
 }
