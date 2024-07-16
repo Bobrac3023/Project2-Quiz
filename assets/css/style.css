@@ -4,14 +4,28 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+/* styling the H1 header element*/
 .h1styling {
     background-color: bisque;
-    align-items: center;
     /* add a box shadow to seperate header from body element*/
     box-shadow: 0 2px 2px black;
-
+    padding-left: 38%;
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+/* Remove bullets */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 
 body {
     background-color: aliceblue;
@@ -24,11 +38,6 @@ main {
 }
 
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 
 /* Set main element take up surplus space and push footer down*/
 main {
