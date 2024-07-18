@@ -34,22 +34,37 @@ body {
     background-color: aliceblue;
 }
 
-/* Make Main element take up surplus space and push footer down*/
-main {
-    flex: 1 0 auto;
-    margin-top: auto;
+
+/* margin and style for main quiz-area*/
+.quiz-area {
+        width:90%;
+        max-width: 600px;
+        margin: 40px auto 60px;
+    
 }
 
-.question-area {
-    padding: 20px 0;;
-}
-
-.question-area h2{
-    font-size:medium;
+.question-area h2 {
+    font-size: medium;
     color: brown;
     font-weight: 700;
-    }
-    
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+/* add hover effect*/
+.btn:hover{
+    background-color: blue;
+    color: aqua;
+}
+
 /* footer styling*/
 .nav {
     background-color: coral;
@@ -58,6 +73,7 @@ main {
     padding: 0;
     margin: 0;
 }
+
 
 /* footer list items styling*/
 .nav li {
