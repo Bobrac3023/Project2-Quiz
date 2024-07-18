@@ -103,9 +103,9 @@ const questions = [{
 ];
 
 /* define variables */
-const quizH2Element = document.getElementsById ("quiz");
-const answerButton = document.getElementsById ("answer-buttons");
-const nextButton = document.getElementsById ("next-button");
+const quizH2Element = document.getElementsById("quiz");
+const answerButton = document.getElementsById("answer-buttons");
+const nextButton = document.getElementsById("next-button");
 
 /* creat variable to store question index and score */
 let presentQuestionIndex = 0;
