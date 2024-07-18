@@ -103,20 +103,27 @@ const questions = [{
 ];
 
 /* define variables */
-const quizH2Element = document.getElementById ("quiz");
-const answerButton = document.getElementById ("answer-buttons");
-const nextButton = document.getElementById ("next-btn");
+const quizH2Element = document.getElementById("quiz");
+const answerButton = document.getElementById("answer-buttons");
+const nextButton = document.getElementById("next-btn");
 
-/* store question index */
+/* creat variable to store question index and score */
 let presentQuestionIndex = 0;
 let score = 0;
 
 /* write function to start quiz*/
-function () {
+function initiateQuiz() 
+{
     presentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next"
-    displayQuestion ();
+    displayQuestion (); 
 }
 
-/* write function to display question*/
+/* write function to display questions*/
+function displayQuestion ()
+ { let questionBank = questions[presentQuestionIndex];
+    let questionNo = presentQuestionIndex + 1;
+    quizElement.innerHTML= questionNo + "." + questionBank.question;
+
+}
