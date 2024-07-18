@@ -62,9 +62,21 @@ body {
 /* add hover effect*/
 .btn:hover{
     background-color: blue;
-    color: aqua;
+    color:aqua
 }
 
+#next-button{
+    cursor: pointer;
+    color: black;
+    background-color: aqua;
+    border-radius: 1px;
+    padding: 10px;
+    width: 150px;
+    margin: 20px auto  0;
+    border-radius: 4px;
+    display:block;
+    font-weight:700
+}
 /* footer styling*/
 .nav {
     background-color: coral;
