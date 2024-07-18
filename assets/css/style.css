@@ -40,8 +40,16 @@ main {
     margin-top: auto;
 }
 
+.question-area {
+    padding: 20px 0;;
+}
 
-
+.question-area h2{
+    font-size:medium;
+    color: brown;
+    font-weight: 700;
+    }
+    
 /* footer styling*/
 .nav {
     background-color: coral;
