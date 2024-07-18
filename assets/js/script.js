@@ -116,5 +116,7 @@ function () {
     presentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next"
-    displayQuestion();
+    displayQuestion ();
 }
+
+/* write function to display question*/
