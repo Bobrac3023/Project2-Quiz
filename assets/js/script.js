@@ -103,27 +103,40 @@ const questions = [{
 ];
 
 /* define variables */
-const quizH2Element = document.getElementById("quiz");
-const answerButton = document.getElementById("answer-buttons");
-const nextButton = document.getElementById("next-btn");
+const quizH2Element = document.getElementsById ("quiz");
+const answerButton = document.getElementsById ("answer-buttons");
+const nextButton = document.getElementsById ("next-button");
 
 /* creat variable to store question index and score */
 let presentQuestionIndex = 0;
 let score = 0;
 
 /* write function to start quiz*/
-function initiateQuiz() 
-{
+function initiateQuiz() {
+    /* reset question index to zero*/
     presentQuestionIndex = 0;
+    /* reset score index to zero*/
     score = 0;
     nextButton.innerHTML = "Next"
-    displayQuestion (); 
+    displayQuestion();
 }
 
 /* write function to display questions*/
-function displayQuestion ()
- { let questionBank = questions[presentQuestionIndex];
+function displayQuestion() {
+    /* define var to get questions with index 0*/
+    let questionBank = questions[presentQuestionIndex];
+    /* increment question by one*/
     let questionNo = presentQuestionIndex + 1;
-    quizElement.innerHTML= questionNo + "." + questionBank.question;
+    /* display question */
+    quizH2Element.innerHTML = questionNo + "." + questionBank.question;
 
+/* write function to display answers*/
+    questionBank.answers.array.forEach(answers => {
+            const button = document.createElement('button');
+            button.innerHTML = answers.text;
+            button.classList.add('btn');
+            answerButton.appendChild(button);
+        })
 }
+displayQuestion()
+
