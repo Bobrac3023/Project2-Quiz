@@ -77,6 +77,13 @@ body {
     display:block;
     font-weight:700;
 }
+
+.correct {
+    background-color:deepskyblue
+}
+.incorrect {
+    background-color: brown;
+}
 /* footer styling*/
 .nav {
     background-color: coral;

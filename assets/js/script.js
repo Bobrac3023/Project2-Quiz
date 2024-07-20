@@ -59,9 +59,18 @@ function displayQuestion() {
         if(choices.correct) {
            button.dataset.correct=choices.correct; 
         }
-
+        button.addEventListener("click", selectChoice);
     });
+}
 
+function selectChoice(e){
+    let selectedBtn =e.target;
+    let  isCorrect = selectedBtn.dataset.correct === "true";
+    if (isCorrect) {
+        selectedBtn.classList.add("correct");
+    } else {
+        selectedBtn.classList.add("incorrect");
+    }
 }
 
 
