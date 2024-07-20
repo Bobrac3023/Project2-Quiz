@@ -1,8 +1,23 @@
 const questions = [{
     question: "Who is the President of India",
-    options: ["Smt Sonia Gandhi", "Smt Droupadi Murmu", "Smt Sarojini Naidu", " Smt Pratiba Patil ", ]
+    choices: [{
+            text: "Smt Sonia Gandhi",
+            correct: false
+        },
+        {
+            text: "Smt Droupadi Murmu",
+            correct: true
+        },
+        {
+            text: "Smt Sarojini Naidu",
+            correct: false
+        },
+        {
+            text: " Smt Pratiba Patil ",
+            correct: false
+        }
+    ]
 }];
-
 /* define variables */
 const quizH2Element = document.getElementById("quiz");
 const answerButton = document.getElementById("answer-buttons");
@@ -31,12 +46,23 @@ function displayQuestion() {
     /* display question */
     quizH2Element.innerHTML = questionNo + "." + questionBank.question;
 
-    /* write function to display answers*/
-    questionBank.options.forEach(options => {
+    /* write function to display answers with 'forEach' loop method*/
+    questionBank.choices.forEach(choices => {
+        /* Create 'Button' element */
         const button = document.createElement('button');
-        button.innerHTML = options;
+        /* add details to innerHTML of button Element*/
+        button.innerHTML = choices.text;
         button.classList.add('btn');
+        /* append button element as child inside the Div*/
         answerButton.appendChild(button);
-    })
+        /* Create ifLoop when user selects an option*/
+        if(choices.correct) {
+           button.dataset.correct=choices.correct; 
+        }
+
+    });
+
 }
+
+
 displayQuestion()
