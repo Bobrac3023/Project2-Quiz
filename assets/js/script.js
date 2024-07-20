@@ -44,11 +44,13 @@ const questions = [{
 const quizH2Element = document.getElementById("quiz");
 const answerButton = document.getElementById("answer-buttons");
 const submitButton = document.getElementById("submit-button");
+let  correctAnswer= document.getElementById("correct-answwer");
+let  wrongtAnswer= document.getElementById("wrong-answwer");
 
 /* creat variable to store question index and score */
 let presentQuestionIndex = 0;
 let score = 0;
-let correct
+
 
 /* write function to start quiz*/
 function initiateQuiz() {
