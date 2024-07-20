@@ -1,43 +1,43 @@
 const questions = [{
-    question: "Who is the President of India",
-    choices: [{
-            text: "Smt Sonia Gandhi",
-            correct: false
-        },
-        {
-            text: "Smt Droupadi Murmu",
-            correct: true
-        },
-        {
-            text: "Smt Sarojini Naidu",
-            correct: false
-        },
-        {
-            text: " Smt Pratiba Patil ",
-            correct: false
-        }
-    ]
-},
-{
-    question: "Who is last Governor-General of Dominion of India",
-    answers: [{
-            text: " Shri Chakravarti Rajagopalachari ",
-            correct: true
-        },
-        {
-            text: "Lord William Bentinck",
-            correct: false
-        },
-        {
-            text: "Shri Rajendra Prasad",
-            correct: false
-        },
-        {
-            text: " Dr Maulana Azad ",
-            correct: false
-        },
-    ]
-}
+        question: "Who is the President of India",
+        choices: [{
+                text: "Smt Sonia Gandhi",
+                correct: false
+            },
+            {
+                text: "Smt Droupadi Murmu",
+                correct: true
+            },
+            {
+                text: "Smt Sarojini Naidu",
+                correct: false
+            },
+            {
+                text: " Smt Pratiba Patil ",
+                correct: false
+            }
+        ]
+    },
+    {
+        question: "Who is last Governor-General of Dominion of India",
+        choices: [{
+                text: " Shri Chakravarti Rajagopalachari ",
+                correct: true
+            },
+            {
+                text: "Lord William Bentinck",
+                correct: false
+            },
+            {
+                text: "Shri Rajendra Prasad",
+                correct: false
+            },
+            {
+                text: " Dr Maulana Azad ",
+                correct: false
+            },
+        ]
+    }
 
 ];
 /* define variables */
@@ -79,16 +79,17 @@ function displayQuestion() {
         /* append button element as child inside the Div*/
         answerButton.appendChild(button);
         /* Create ifLoop when user selects an option*/
-        if(choices.correct) {
-           button.dataset.correct=choices.correct; 
+        if (choices.correct) {
+            button.dataset.correct = choices.correct;
         }
+        //let choiceno = questionBank.choices + 1;
         button.addEventListener("click", selectChoice);
     });
 }
-
-function selectChoice(e){
-    let selectedBtn =e.target;
-    let  isCorrect = selectedBtn.dataset.correct === "true";
+/* Create function when user clicks on the choices offered*/
+function selectChoice(event) {
+    let selectedBtn = event.target;
+    let isCorrect = selectedBtn.dataset.correct === "true";
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
@@ -98,6 +99,23 @@ function selectChoice(e){
         alert("Sorry- Incorrect- Try again!!!!");
     }
 }
+/* Create function for Submit Button */
+function handleSubmitButton() {
+    presentQuestionIndex++;
+    if (presentQuestionIndex < questions.length) {
+        displayQuestion();
+    } else {
+        showscore();
+    }
+}
 
+/* Create eventListener when user clicks submit button*/
+submitButton.addEventListener("click", () => {
+    if (presentQuestionIndex <= questions.length) {
+        handleSubmitButton()
+    } else {
+        startQuiz()
+    }
+});
 
 displayQuestion()
