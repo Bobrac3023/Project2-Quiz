@@ -17,15 +17,38 @@ const questions = [{
             correct: false
         }
     ]
-}];
+},
+{
+    question: "Who is last Governor-General of Dominion of India",
+    answers: [{
+            text: " Shri Chakravarti Rajagopalachari ",
+            correct: true
+        },
+        {
+            text: "Lord William Bentinck",
+            correct: false
+        },
+        {
+            text: "Shri Rajendra Prasad",
+            correct: false
+        },
+        {
+            text: " Dr Maulana Azad ",
+            correct: false
+        },
+    ]
+}
+
+];
 /* define variables */
 const quizH2Element = document.getElementById("quiz");
 const answerButton = document.getElementById("answer-buttons");
-const nextButton = document.getElementById("next-button");
+const submitButton = document.getElementById("submit-button");
 
 /* creat variable to store question index and score */
 let presentQuestionIndex = 0;
 let score = 0;
+let correct
 
 /* write function to start quiz*/
 function initiateQuiz() {
@@ -33,7 +56,7 @@ function initiateQuiz() {
     presentQuestionIndex = 0;
     /* reset score index to zero*/
     score = 0;
-    nextButton.innerHTML = "Next"
+    submitButton.innerHTML = "Submit"
     displayQuestion();
 }
 
@@ -68,8 +91,11 @@ function selectChoice(e){
     let  isCorrect = selectedBtn.dataset.correct === "true";
     if (isCorrect) {
         selectedBtn.classList.add("correct");
+        score++;
+        alert("Great- This is the right answer!!!!");
     } else {
         selectedBtn.classList.add("incorrect");
+        alert("Sorry- Incorrect- Try again!!!!");
     }
 }
 
