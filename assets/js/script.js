@@ -44,8 +44,8 @@ const questions = [{
 const quizH2Element = document.getElementById("quiz");
 const answerButton = document.getElementById("answer-buttons");
 const submitButton = document.getElementById("submit-button");
-let  correctAnswer= document.getElementById("correct-answwer");
-let  wrongtAnswer= document.getElementById("wrong-answwer");
+let correctAnswer = document.getElementById("correct-answwer");
+let wrongtAnswer = document.getElementById("wrong-answwer");
 
 /* creat variable to store question index and score */
 let presentQuestionIndex = 0;
@@ -64,7 +64,8 @@ function initiateQuiz() {
 
 /* write function to display questions*/
 function displayQuestion() {
-    /* define var to get questions with index 0*/
+    resetState();
+        /* define var to get questions with index 0*/
     let questionBank = questions[presentQuestionIndex];
     /* increment question by one*/
     let questionNo = presentQuestionIndex + 1;
@@ -84,9 +85,14 @@ function displayQuestion() {
         if (choices.correct) {
             button.dataset.correct = choices.correct;
         }
-        //let choiceno = questionBank.choices + 1;
         button.addEventListener("click", selectChoice);
     });
+}
+/* Create function to remove buttons*/
+function resetState() {
+    while(answerButton.firstChild){
+        answerButton.removeChild(answerButton.firstChild)
+    }
 }
 /* Create function when user clicks on the choices offered*/
 function selectChoice(event) {
@@ -104,11 +110,12 @@ function selectChoice(event) {
 /* Create function for Submit Button */
 function handleSubmitButton() {
     presentQuestionIndex++;
-    if (presentQuestionIndex < questions.length) {
+        if (presentQuestionIndex < questions.length) {
         displayQuestion();
     } else {
         showscore();
     }
+    
 }
 
 /* Create eventListener when user clicks submit button*/
