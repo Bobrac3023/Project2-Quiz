@@ -60,7 +60,7 @@ body {
 }
 
 /* add hover effect*/
-.btn:hover{
+.btn:hover:not([disabled]){
     background-color: blue;
     color:aqua
 }
