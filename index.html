@@ -29,89 +29,78 @@
 </head>
 
 <body>
-
     <div class="h1styling">
-        <h1> <i class="fa-solid fa-puzzle-piece"> </i>!!!Welcome to the Quiz !!!!</h1>
+        <h1> <i class="fa-solid fa-puzzle-piece"> </i>!!! India- A History Quiz  !!!!</h1>
     </div>
     <div>
         <ul class="navbar">
-            <li><a href="history-quiz.html">History Quiz <i class="fa-brands fa-internet-explorer"></i></a></li>
+            <li><a href="index.html">Home<i class="fa-solid fa-house-user"></i></a></li>
             <li><a href="feedback.html">Feedback <i class="fa-solid fa-phone-flip"></i></a></li>
         </ul>
     </div>
+    <!-- This is the main quiz Area -->
+    <div class="quiz-area">
 
-    <main>
-        <!-- This is the main quiz Area -->
-        <div class="quiz-area">
-            <p>Each categoty of Quiz contains 5 questions.<br>
-                You can choose to attempt any quiz of your choice in any order. <br>
-                You can also attempt all quizzes if you desire.<br>
-                The questions are designed to tickle your curosity and put your brains into top gear.ENJOY!</p>
-            <!-- This is the questions  Area -->
-            <div class="controls-area">
-                <button class="" btn btn--big btn--green"></button>
-                <!-- create font-awesome fonts -->
-                <i class="fa-solid fa-brain"></i>
-                <button class="" btn btn--big btn--blue"></button>
-                <i class="fa-solid fa-globe"></i>
-                <button class="" btn btn--big btn--orange"></button>
-                <i class="fa-solid fa-stethoscope"></i>
-                <button class="" btn btn--big btn--red"></button>
-                <i class="fa-brands fa-internet-explorer"></i>
+        <p>The Quiz contains 5 questions.<br>
+            Each question is based on Indian History around the time India gained independence from the British</p>
 
-            </div>
-            <div class="quesion-area">
-                <span id="question">Question </span>
-                <span id=operand1>0</span>
-                <span id=operator>x</span>
-                <span id="operator2">0</span>
-                <!-- no id as it will not be referenced from Javascript -->
-                <span>=</span>
-                <!-- for mobile users -->
-                <p class="answer-message">Enter Answer </p>
-                <input id="answer-box" type="text">
-            </div>
-            <button class="btn btn--gray" type="text">Submit Answer</button>
+        <!-- create div for questions -->
+        <div class="question-area">
+            <!-- area to display questions -->
+            <h2 id="quiz">Question goes here </h2>
+        </div>
 
-            <div class="Answer-area">
-                <p> Correct Answers</p>
-                <p> Incorrect Answers </p>
-            </div>
-    </main>
-    <div>
-        <footer>
+        <div id="answer-buttons">
+            <!-- define clickable button for answers -->
 
-            <nav>
-                <ul class="nav">
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                            aria-label="Visit our Facebook page (opens in a new tab)"><i
-                                class="fa-brands fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                            aria-label="Visit our Twitter page (opens in a new tab)"><i
-                                class="fa-brands fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                            aria-label="Visit our YouTube page (opens in a new tab)"><i
-                                class="fa-brands fa-youtube"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                            aria-label="Visit our Instagram page (opens in a new tab)"><i
-                                class="fa-brands fa-instagram"></i></a>
-                    </li>
+        </div>
 
-                </ul>
-            </nav>
-            <pre>                                                                 Copyright © 2024 - All Rights Reserved     Author: Roshan Neville Sequeira</pre>
+        <!-- create submit button to go to next set of questions-->
+        <button id="submit-button"> SUBMIT ==> </button>
 
-        </footer>
+        <!-- create div to display answers -->
+        <div id="score-area">
+            <P id="correct-answer"> Correct Answer</p>
+            <P id=" wrong-answer"> Wrong Answer</p>
+
+        </div>
+
     </div>
+
+    <footer>
+
+        <nav>
+            <ul class="nav">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (opens in a new tab)"><i
+                            class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Twitter page (opens in a new tab)"><i
+                            class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our YouTube page (opens in a new tab)"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page (opens in a new tab)"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </li>
+
+            </ul>
+        </nav>
+        <pre>                                                                 Copyright © 2024 - All Rights Reserved     Author: Roshan Neville Sequeira</pre>
+
+    </footer>
+    <script src="assets/js/script.js"></script>
     <!--Fontawesome script for our social media icons-->
     <script src="https://kit.fontawesome.com/fd8093e34d.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
