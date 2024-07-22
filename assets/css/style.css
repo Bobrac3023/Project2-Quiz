@@ -27,19 +27,27 @@
 .navbar li {
     display: inline-block;
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
 }
 
 body {
     background-color: aliceblue;
 }
 
+#h2quiz-area {
+    margin: 10px auto 10px;
+    text-align: center;
 
+}
+#p2quiz-area {
+    margin: 10px auto 19px;
+    text-align: center;
+}
 /* margin and style for main quiz-area*/
 .quiz-area {
         width:90%;
         max-width: 600px;
-        margin: 40px auto 60px;
+        margin: 30px auto 50px;
     
 }
 
@@ -64,6 +72,9 @@ body {
     background-color: blue;
     color:aqua
 }
+#answer-buttons{
+    font-weight: bolder;
+}
 
 #submit-button{
     cursor: pointer;
@@ -79,10 +90,10 @@ body {
 }
 
 .correct {
-    background-color:deepskyblue
+    background-color:aquamarine
 }
 .incorrect {
-    background-color: brown;
+    background-color:chocolate;
 }
 /* footer styling*/
 .nav {
@@ -101,6 +112,3 @@ body {
     padding: 20px;
 }
 
-.footerp2 {
-    text-align: center;
-}

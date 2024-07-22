@@ -37,7 +37,7 @@ const totalQuestions = [{
                 result: false
             },
         ]
-    }
+    },
 
     {
         question: "Who is called Frontier Gandhi ",
@@ -162,18 +162,18 @@ function selectChoice(e) {
     } else {
         selectedBtn.classList.add("incorrect");
         alert(`!!! OPS- This is INCORRECT!!!`);
-        
-        
-        
-       
+
+
+
+
     }
     Array.from(answerButton.children).forEach(button => {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
         button.disabled = true;
-        
-        
+
+
     });
     submitButton.style.display = "block";
 }
@@ -210,7 +210,5 @@ submitButton.addEventListener("click", () => {
         initiateQuiz()
     }
 });
-
-
 
 displayQuestion()
