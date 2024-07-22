@@ -1,16 +1,16 @@
 const totalQuestions = [{
-        question: "Who is the President of India",
+        question: "Who is the first Governor of United Provinces, after India's independence.",
         choices: [{
                 text: "Smt Sonia Gandhi",
                 result: false
             },
             {
                 text: "Smt Droupadi Murmu",
-                result: true
+                result: false
             },
             {
                 text: "Smt Sarojini Naidu",
-                result: false
+                result: true
             },
             {
                 text: " Smt Pratiba Patil ",
@@ -39,6 +39,66 @@ const totalQuestions = [{
         ]
     }
 
+    {
+        question: "Who is called Frontier Gandhi ",
+        choices: [{
+                text: " Shri Muhamad Ali Jinnah ",
+                result: false
+            },
+            {
+                text: "Shri Dr RajMohan Gandhi",
+                result: false
+            },
+            {
+                text: "Shri Abdul Ghaffār Khān",
+                result: true
+            },
+            {
+                text: " Shri Dr Maulana Abul Kalam Azad ",
+                result: false
+            },
+        ]
+    },
+    {
+        question: "Who is first finance minister of Independent India",
+        choices: [{
+                text: " Shri Dr Babasaheb Ambedkar ",
+                result: false
+            },
+            {
+                text: "Shri Shanmukham Chetty",
+                result: true
+            },
+            {
+                text: "Shri Dr Rajendra Prasad",
+                result: false
+            },
+            {
+                text: " Shri Dr Maulana Abul Kalam Azad ",
+                result: false
+            },
+        ]
+    },
+    {
+        question: "Who is first education minister of Indepenedent India",
+        choices: [{
+                text: " Shri Dr Maulana Abul Kalam Azad ",
+                result: true
+            },
+            {
+                text: "Shri Shanmukham Chetty",
+                result: false
+            },
+            {
+                text: "Shri Dr Rajendra Prasad",
+                result: false
+            },
+            {
+                text: " Shri Dr John Matthai  ",
+                result: false
+            },
+        ]
+    }
 ];
 
 
@@ -46,7 +106,7 @@ const totalQuestions = [{
 const quizH2Element = document.getElementById("quiz");
 const answerButton = document.getElementById("answer-buttons");
 const submitButton = document.getElementById("submit-button");
-//const scoreArea = document.getElementById("score-area");
+const scoreArea = document.getElementById("score-area");
 
 //variable to store question index and score 
 let presentQuestionIndex = 0;
@@ -101,15 +161,21 @@ function selectChoice(e) {
         alert("!!!!Great- This is the right answer!!!!");
     } else {
         selectedBtn.classList.add("incorrect");
-        alert(" !!!! Sorry- Incorrect Answer!!!!");
+        alert(`!!! OPS- This is INCORRECT!!!`);
+        
+        
+        
+       
     }
     Array.from(answerButton.children).forEach(button => {
-        if(button.dataset.correct === "true"){
-            button.classList.add ("correct");
+        if (button.dataset.correct === "true") {
+            button.classList.add("correct");
         }
-        button.disabled =true;
+        button.disabled = true;
+        
+        
     });
-    submitButton.style.display ="block";
+    submitButton.style.display = "block";
 }
 
 // function to remove buttons
@@ -134,7 +200,6 @@ function handleSubmitButton() {
     } else {
         showscore();
     }
-
 }
 
 //eventListener when user clicks submit button
