@@ -1,7 +1,6 @@
 # India- A History Quiz 
  
-
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+![Blow up of main page](assets/images/main_blowup_page.png)
 
 ## Introduction 
 The project is conceived to test users knowledge on leaders who shaped India,right after independence from British rule. 
@@ -9,34 +8,46 @@ The quiz will appeal to anyoe with an active interest in Indian political histor
 The quiz should tickle one's curiosity, to understand the roles played by these towering peronalities in shaping India, as we see it today.  
 
 ## Features 
--The project is written in HTML to define the structure, CSS for styling and Javascript to provide the logic.
--It main page includes a title, a nav bar, the quiz area and a footer.
--The quiz area includes a **question** section, **answer** section and a **next** button  
--It presents the user with a set of **5 questions** and **4 answer options** to select from. 
--A **right** or **wrong** selection provides **visual representation** by change in color and an **alert pop-up**.
--The answer options presented **grey out** after **any one** answer option is selected. 
--This grey out feature is **enabled** irrespective of a **right or wrong answer** choice.    
--The user has the option to skip a particular question or multiple questions if he/she so chooses to do so. 
--The Next button allows the user to move to the next set of question and answers 
--At the end of **5 questions**, the **total score** is computed and presented to the user 
--The user is also presented with the right answers with a clickable link that takes it to an external Wikipedia page. 
--Emphasis is more on Javascript and how it can be used to manipualte the DOM and style the CSS.
--Judicous use of functions, object literals,constants, array and template literal make the code an easy read.
--Extensive use of commands like  **GetElement**, **inneHTML**, **classlists** to create, remove, modify HTML Elements and style them with CSS is 
- demonstrated.
-- Overall the flow of code is kept simple and **relevant comments** provided for better understanding and **intepretation**.
-
-
+-The project is written in HTML to define the structure, CSS for styling and Javascript to provide the logic.  
+-It main page includes a title, a nav bar, the quiz area and a footer.  
+-The quiz area includes a **question** section, **answer** section and a **next** button.  
+-It presents the user with a set of **5 questions** and **4 answer options** to select from.  
+-A **right** or **wrong** selection provides **visual representation** by change in color and an **alert pop-up**.  
+-The answer options presented **grey out** after **any one** answer option is selected.  
+-This grey out feature is **enabled** irrespective of a **right or wrong answer** choice.  
+-The user has the option to skip a particular question or multiple questions if he/she so chooses to do so.  
+-The Next button allows the user to move to the next set of question and answers.  
+-At the end of **5 questions**,the **total score** is computed and presented to the user.  
+-The user is also presented with the right answers with a clickable link that takes it to an external Wikipedia page.  
+-Emphasis is more on Javascript and how it can be used to manipualte the DOM and style the CSS.  
+-Judicous use of functions, object literals,constants, array and template literal make the code an easy read.  
+-Extensive use of commands like  **GetElement**, **inneHTML**, **classlists** to create, remove, modify HTML Elements and style CSS is 
+demonstrated.  
+- Overall the flow of code is kept simple and **relevant comments** provided for better understanding and **intepretation**.  
 
 
 ### Existing Features
 
+-__head_element__
+
+-Language for the website is **US English**.  
+-Meta tags and viewport included to make page responsive.
+-Author and keywords included for serach engine optimization.  
+-Links to favicon and CSS stylesheet includded.  
+-**favicon** details includes three different screen sizes.  
+-The title **Blue Heaven Quiz Master** defined here.  
+
+-__Header__
+         
+  -The Header contains the **H1** nested inside the **Body** element.  
+  - It displays a logo of a **piece of puzzle** downloaded from fontawesome website.  
+  ![header](assets/images/header.png)
+   
 - __Navigation Bar__
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
-
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+  - The navigation bar design features one unordered list that is fully responsive.  
+  - The responsive navigation bar includes links to the Logo of a **home** downloaded from **fontawesome** website.  
+  ![navbar](assets/images/nav_bar.png)
 
 - __The landing page image__
 
