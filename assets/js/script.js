@@ -1,5 +1,5 @@
 const totalQuestions = [{
-        question: "Who is the first President of Independent India.",
+        question: "Who was the first president of independent India?",
         choices: [{
                 text: "Smt Sonia Gandhi",
                 result: false
@@ -19,7 +19,7 @@ const totalQuestions = [{
         ]
     },
     {
-        question: "Who is the last Governor-General of Dominion of India.",
+        question: "Select the last governor-general of dominion of India?",
         choices: [{
                 text: "Shri Chakravarti Rajagopalachari",
                 result: true
@@ -40,7 +40,7 @@ const totalQuestions = [{
     },
 
     {
-        question: "Who is called Frontier Gandhi. ",
+        question: "Who is called Frontier Gandhi? ",
         choices: [{
                 text: "Shri Muhamad Ali Jinnah",
                 result: false
@@ -60,7 +60,7 @@ const totalQuestions = [{
         ]
     },
     {
-        question: "Who is first finance minister of Independent India.",
+        question: "Select the first finance minister of independent India?",
         choices: [{
                 text: "Shri Dr Babasaheb Ambedkar ",
                 result: false
@@ -80,7 +80,7 @@ const totalQuestions = [{
         ]
     },
     {
-        question: "Who is first education minister of Independent India",
+        question: "Select the first education minister of independent India?",
         choices: [{
                 text: "Shri Dr Maulana Abul Kalam Azad",
                 result: true
@@ -104,7 +104,7 @@ const totalQuestions = [{
 // variables 
 const quizH2Element = document.getElementById("quiz");
 const answerButton = document.getElementById("answer-buttons");
-const submitButton = document.getElementById("submit-button");
+const nextButton = document.getElementById("next-button");
 const scoreArea = document.getElementById("score-area");
 
 //variable to store question index and score 
@@ -119,7 +119,7 @@ function initiateQuiz() {
     score = 0;
     correctAnswers = 0;
     wrongAnswers = 0;
-    submitButton.innerHTML = "submit-button"
+    nextButton.innerHTML = "NEXT ==>"
     displayQuestion();
 }
 
@@ -159,7 +159,7 @@ function selectChoice(e) {
         alert("!!!!Great- This is the right answer!!!!");
     } else {
         selectedBtn.classList.add("incorrect");
-        alert(`!!! OPS- This is INCORRECT!!!`);
+        alert(`!!! OOPS- This is INCORRECT!!!`);
         //alert(`!!! OPS- This is INCORRECT!!!: ` + question.choices.find(result => result.true).text);
 
     }
@@ -169,7 +169,7 @@ function selectChoice(e) {
         }
         button.disabled = true;
     });
-    submitButton.style.display = "block";
+    nextButton.style.display = "block";
 }
 
 // function to remove buttons
@@ -183,12 +183,12 @@ function showscore() {
     resetState();
     quizH2Element.classList.add("score-count");
     quizH2Element.innerHTML = `You scored ${score} out of ${totalQuestions.length}!`;
-    submitButton.innerHTML = "Play-Again";
-    submitButton.style.display = "block";
+    nextButton.innerHTML = "Play-Again";
+    nextButton.style.display = "block";
 }
 
-// function for Submit Button 
-function handleSubmitButton() {
+// function for next Button 
+function handleNexttButton() {
     presentQuestionIndex++;
     if (presentQuestionIndex < totalQuestions.length) {
         displayQuestion();
@@ -197,10 +197,10 @@ function handleSubmitButton() {
     }
 }
 
-//eventListener when user clicks submit button
-submitButton.addEventListener("click", () => {
+//eventListener when user clicks next button
+nextButton.addEventListener("click", () => {
     if (presentQuestionIndex <= totalQuestions.length) {
-        handleSubmitButton()
+        handleNexttButton()
     } else {
         initiateQuiz()
     }
