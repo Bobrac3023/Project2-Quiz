@@ -21,14 +21,23 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 -The user is also presented with the right answers with a clickable link that takes it to an external Wikipedia page.  
 -Emphasis is more on Javascript and how it can be used to manipualte the DOM and style the CSS.  
 -Judicous use of functions, object literals,constants, array and template literal make the code an easy read.  
--Extensive use of commands like  **GetElement**, **inneHTML**, **classlists** to create, remove, modify HTML Elements and style CSS is 
-demonstrated.  
+-Extensive use of commands **GetElement**, **inneHTML**, **classlists** to create, remove, modify HTML Elements and style CSS is demonstrated.  
 - Overall the flow of code is kept simple and **relevant comments** provided for better understanding and **intepretation**.  
+
+
 
 
 ### Existing Features
 
--__head_element__
+-__File_structure__
+
+-Three main project files created using statndard naming conventions.  
+-**index.html** for HTML,**style.css** for CSS and **script.js** for Javascript.
+-assets folder holds tthe **css**, **images** and **js** sub-folders.  
+-All relevant images for favicon and readme stored in he **images** sub-folder.  
+
+
+-__Head_element__
 
 -Language for the website is **US English**.  
 -Meta tags and viewport included to make page responsive.
@@ -36,6 +45,7 @@ demonstrated.
 -Links to favicon and CSS stylesheet includded.  
 -**favicon** details includes three different screen sizes.  
 -The title **Blue Heaven Quiz Master** defined here.  
+![head_element](assets/images/head_element.png)
 
 -__Header__
          
@@ -49,19 +59,18 @@ demonstrated.
   - The responsive navigation bar includes links to the Logo of a **home** downloaded from **fontawesome** website.  
   ![navbar](assets/images/nav_bar.png)
 
-- __The landing page image__
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
+- __Quiz Section__
 
-![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
-
-- __Club Ethos Section__
-
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
-
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
+  -The **quiz section** is dived into **TWO div elements**,**TWO h2**, **one Paragraph** and  **one button** element.  
+  -The **first h2 and the paragraph element** is configured to provide the quiz information including instructions.
+  -The first div nexted inside the **main div** is referenced using a class **question-area**.
+  -Nested inside this div is the **h2 element** designed to **display the questions**, referenced by **id="quiz"**.
+  -The second div is referenced by **id="answer-buttons"**, designed to display the answers from the **object literals** defined in Javascript.
+  -The button element is referenced using an **"id=next-button"** to enable user to navigate to next set of questions.  
+  -The button element is access and modified using Javacript to **dipslay the "Play-again"** button at the end of the quiz.  
+  
+![quiz section](assets/images/quiz_area.png)
 
 - __Meetup Times section__
 
