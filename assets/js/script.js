@@ -119,7 +119,7 @@ function initiateQuiz() {
     score = 0;
     correctAnswers = 0;
     wrongAnswers = 0;
-    nextButton.innerHTML = "NEXT ==>"
+    nextButton.innerHTML = "NEXT ==>";
     displayQuestion();
 }
 
@@ -146,7 +146,7 @@ function displayQuestion() {
         if (choices.result) {
             button.dataset.result = choices.result;
         }
-        button.addEventListener("click", selectChoice)
+        button.addEventListener("click", selectChoice);
     });
 }
 
@@ -175,7 +175,7 @@ function selectChoice(e) {
 // function to remove buttons
 function resetState() {
     while (answerButton.firstChild) {
-        answerButton.removeChild(answerButton.firstChild)
+        answerButton.removeChild(answerButton.firstChild);
     }
 }
 //function when user clicks on answers
@@ -200,10 +200,10 @@ function handleNexttButton() {
 //eventListener when user clicks next button
 nextButton.addEventListener("click", () => {
     if (presentQuestionIndex <= totalQuestions.length) {
-        handleNexttButton()
+        handleNexttButton();
     } else {
-        initiateQuiz()
+        initiateQuiz();
     }
 });
 
-displayQuestion()
+displayQuestion();
