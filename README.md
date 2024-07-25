@@ -86,48 +86,39 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
       -showScore- Actions to take to dispay final score.  
       -handleNextButton- Actions to take each time user clicks the **Next** button. 
 
-
-
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
-
 - __The Footer__ 
 
-  - The footer section includes links to the relevant social media sites for Love Runnin. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
+  -The footer section includes links to the relevant social media sites for. 
+  -For this project, they default to the login page of each social media icon.
+  -All fonts were used from fontawesome website along with the reference links.
+  -The links will open to a new tab to allow easy navigation for the user. 
+  -The footer is valuable to the user as it encourages them to keep connected via social media.
+  -all links were tested and found to be working fine. 
 
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
+![Footer](assets/images/footer.png)
+![footer_icon_on_hover](assets/images/footer_icon_on_hover.png)
+![facebook_social_media_link](assets/images/facebook_social_media_link.png)
 
-- __Gallery__
 
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
+- __Images__
 
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
+  -The images folder provides all supporting images referenced in this readment file.
+  -The Favicon is also stored in this file. 
+   
 
-- __The Sign Up Page__
+![favicon](assets/images/dodger.png)
 
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
-
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
 ### Features Left to Implement
 
-- A timer for apprimately 15 mins.  
-- A progress bar.  
--  
+  -A timer for apprimately 15 mins.  
+  -A progress bar.  
 
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 ### Manual testing 
--various manual tests were carried out to understand how the project functions. 
+  -various manual tests were carried out to understand how the project functions. 
 
   -AsusLaptop with a screensize of 1920x1080
   ![laptop_1920_external](assets/images/laptop_1920_external.png) 
@@ -146,7 +137,7 @@ In addition, you should mention in this section how your project looks and works
 
   -Samsung mobileA54 User clicks correct answer
   ![user_click_right](assets/images/samsung_user_click_right.png)
-
+ 
   -Samsung mobileA54 User clicks wrong answer
   ![user_click_wrong](assets/images/samsung_user_click_wrong.png)
 
@@ -154,23 +145,22 @@ In addition, you should mention in this section how your project looks and works
   ![user_quiz_completion](assets/images/samsung_quiz_completion.png)
 
 
-
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official.[W3c validator](https://validator.w3.org/#validate_by_input)
+   -No errors were returned when passing through the official.[W3c validator](https://validator.w3.org/#validate_by_input)
 
-  ![html_validation](assets/images/html_validator.png)
+   ![html_validation](assets/images/html_validator.png)
 
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+   -No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
-  ![css_validation](assets/images/css_validation.png)
+   ![css_validation](assets/images/css_validation.png)
 
 - JSHINT 
-  - No errors were found when tested throgh the jshint testing site 
+   -No errors were found when tested throgh the jshint testing site 
 
-  ![jshint_testing](assets/images/jshint_testing.png)
+   ![jshint_testing](assets/images/jshint_testing.png)
 
 ### Unfixed Bugs
 
@@ -178,40 +168,36 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
-
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab, select pages, and change **Branch** to main hub from none.
+  -The site was deployed to GitHub pages as follows: 
+  -In the GitHub repository, navigate to the Settings tab, select pages, and change **Branch** to main hub from none.
 
   ![select_branch_github_deployment](assets/images/select_branch_github_deployment.png)
 
-  - From the Actions tab, select Deployment to check deployment status and capture external link.
+  -From the Actions tab, select Deployment to check deployment status and capture external link.
 
   ![github_page_deployment](assets/images/github_page_deployment.png)
 
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+  -Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display 
+  to indicate the successful deployment. 
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+  -The live link can be found here - https://bobrac3023.github.io/Project2-Quiz/
 
 
 ## Credits 
 
+  -Extra help to understand key Javascript scripts (https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37)
+  -Understand how to design the quiz (https://www.sitepoint.com/simple-javascript-quiz/)
+  -Understand var and const declarations (https://www.giraffeacademy.com/web-development/javascript/building-a-quiz/)
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-- Extra help to understand key Javascript scripts (https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37)
-- Understand how to design the quiz (https://www.sitepoint.com/simple-javascript-quiz/)
-- Understand var and const declarations (https://www.giraffeacademy.com/web-development/javascript/building-a-quiz/)
 ### Content 
 
-- How to design, structure and write code instructions taken from (https://www.youtube.com/watch?v=PBcqGxrr9g8)
-- The icons in the footer and header were taken from [Font Awesome](https://fontawesome.com/)
+  -How to design, structure and write code instructions taken from (https://www.youtube.com/watch?v=PBcqGxrr9g8)
+  -The icons in the footer and header were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
 
-- The photo used for Favicon is from the author's own cat
-- The images used for the gallery page were taken from this other open source site
+  -The photo used for Favicon is from the author's own cat
+ 
 
 
 Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
