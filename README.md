@@ -78,14 +78,14 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   - There are a multiple functions that are part of the script. 
   - Each function is explained below.  
       -initiateQuiz- This function is to inititae the quiz.  
-      -displayQuestion- This function will display the questions from the array and answer options from object lterals.
+      -displayQuestion- This function will display the questions from the array and answer options from object lterals.  
       -resetState- to remove previous child elements.  
       -selectChoice- Actions to carry once user clicks on a particular answer.  
       -showScore- Actions to display final score.  
       -handleNextButton- Actions to take each time user clicks the **Next** button. 
 
   -Javscript Code validation of function initiateQuiz
-  
+
   ![python_tutor_code_visualization](readme.doc/python_tutor_code_visualization.png)
 
   -Javascript code validation of array and object literals 
@@ -103,7 +103,9 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
   ![Footer](readme.doc/footer.png)
 
+
   ![footer_icon_on_hover](/workspace/Project2-Quiz/readme.doc/footer_icon_on_hover.png)
+
 
   ![facebook_social_media_link](readme.doc/facebook_social_media_link.png)
 
@@ -201,9 +203,8 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
 ### deployment from GitHub
 
-  -The site was deployed to GitHub pages as follows:
-      -In the GitHub repository, navigate to the Settings tab, 
-      -select pages, and change **Branch** to main hub from none.
+  -The site was deployed to GitHub pages as below.  
+  -In the GitHub repository,navigate to the Settings tab,select pages,and change **Branch**to main hub from none.
 
   ![select_branch_github_deployment](readme.doc/select_branch_github_deployment.png)
 
