@@ -21,15 +21,15 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 -The user is also presented with the right answers with a clickable link that takes it to an external Wikipedia page.  
 -Emphasis is more on Javascript and how it can be used to manipualte the DOM and style the CSS.  
 -Judicous use of functions, object literals,constants, array and template literal make the code an easy read.  
--Extensive use of commands **GetElement**, **inneHTML**, **classlists** to create, remove, modify HTML Elements and style CSS is demonstrated.  
-- Overall the flow of code is kept simple and **relevant comments** provided for better understanding and **intepretation**.  
+-Extensive use of commands **GetElement**, **inneHTML**, **classlists** to create, remove, modify HTML Elements and style CSS is demonstrated.-Overall the flow of code is kept simple and **relevant comments** provided for better understanding and **intepretation**.  
+
 
 
 
 
 ### Existing Features
 
--__File_structure__
+- __File_structure__
 
 -Three main project files created using statndard naming conventions.  
 -**index.html** for HTML,**style.css** for CSS and **script.js** for Javascript.
@@ -37,7 +37,7 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 -All relevant images for favicon and readme stored in he **images** sub-folder.  
 
 
--__Head_element__
+- __Head_element__
 
 -Language for the website is **US English**.  
 -Meta tags and viewport included to make page responsive.
@@ -45,12 +45,14 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 -Links to favicon and CSS stylesheet includded.  
 -**favicon** details includes three different screen sizes.  
 -The title **Blue Heaven Quiz Master** defined here.  
+
 ![head_element](assets/images/head_element.png)
 
--__Header__
+- __Header__
          
   -The Header contains the **H1** nested inside the **Body** element.  
   - It displays a logo of a **piece of puzzle** downloaded from fontawesome website.  
+
   ![header](assets/images/header.png)
    
 - __Navigation Bar__
@@ -60,7 +62,8 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   ![navbar](assets/images/nav_bar.png)
 
 
-- __Quiz Section__
+- __HTML Main Quiz Section__
+
 
   -The **quiz section** is dived into **TWO div elements**,**TWO h2**, **one Paragraph** and  **one button** element.  
   -The **first h2 and the paragraph element** is configured to provide the quiz information including instructions.
@@ -72,10 +75,21 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   
 ![quiz section](assets/images/quiz_area.png)
 
-- __Meetup Times section__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+
+- __script js section__
+
+  - As the emphasis of this project is on Javascript, it has been used extendsively to manipulate the HTML elementst.  
+  - There are a multiple functions that are part of the script. 
+  - Each function is explained below.  
+  -    1.initiateQuiz- This function is to inititae the quiz.
+  -    2.displayQuestion- This function will display the questions from the array and answer options from object lterals.
+  -    3.resetState- to remove previous child elements.  
+  -    4.selectChoice- Actions to carry once user clicks on a particular answer.  
+  -    5.showScore- Actions to take to dispay final score.  
+  -    6.handleNextButton- Actions to take each time user clicks the **Next** button. 
+
+
 
 ![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
 
@@ -105,7 +119,10 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ### Features Left to Implement
 
-- Another feature idea
+- A timer for apprimately 15 mins.  
+- A progress bar.  
+-  
+
 
 ## Testing 
 

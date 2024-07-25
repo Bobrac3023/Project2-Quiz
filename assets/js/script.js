@@ -117,8 +117,6 @@ function initiateQuiz() {
     presentQuestionIndex = 0;
     //reset score index to zero
     score = 0;
-    correctAnswers = 0;
-    wrongAnswers = 0;
     nextButton.innerHTML = "NEXT ==>";
     displayQuestion();
 }
@@ -178,7 +176,7 @@ function resetState() {
         answerButton.removeChild(answerButton.firstChild);
     }
 }
-//function when user clicks on answers
+//function for final score
 function showscore() {
     resetState();
     quizH2Element.classList.add("score-count");
