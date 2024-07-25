@@ -86,18 +86,24 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
       -showScore- Actions to take to dispay final score.  
       -handleNextButton- Actions to take each time user clicks the **Next** button. 
 
+  -Javscript Code validation of function initiateQuiz
+  ![python_tutor_code_visualization](assets/images/python_tutor_code_visualization.png)
+
+  -Javascript code validation of array and object literals 
+  ![python_validation_array](assets/images/python_validation_array.png)
+
 - __The Footer__ 
 
-  -The footer section includes links to the relevant social media sites for. 
-  -For this project, they default to the login page of each social media icon.
-  -All fonts were used from fontawesome website along with the reference links.
-  -The links will open to a new tab to allow easy navigation for the user. 
-  -The footer is valuable to the user as it encourages them to keep connected via social media.
+  -The footer section includes links to the relevant social media sites for.  
+  -For this project, they default to the login page of each social media icon.  
+  -All fonts were used from fontawesome website along with the reference links.  
+  -The links will open to a new tab to allow easy navigation for the user.  
+  -The footer is valuable to the user as it encourages them to keep connected via social media.  
   -all links were tested and found to be working fine. 
 
-![Footer](assets/images/footer.png)
-![footer_icon_on_hover](assets/images/footer_icon_on_hover.png)
-![facebook_social_media_link](assets/images/facebook_social_media_link.png)
+  ![Footer](assets/images/footer.png)
+  ![footer_icon_on_hover](assets/images/footer_icon_on_hover.png)
+  ![facebook_social_media_link](assets/images/facebook_social_media_link.png)
 
 
 - __Images__
@@ -106,7 +112,7 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   -The Favicon is also stored in this file. 
    
 
-![favicon](assets/images/dodger.png)
+  ![favicon](assets/images/dodger.png)
 
 
 ### Features Left to Implement
@@ -185,14 +191,14 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
 
 ## Credits 
 
-  -Extra help to understand key Javascript scripts (https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37)
-  -Understand how to design the quiz (https://www.sitepoint.com/simple-javascript-quiz/)
-  -Understand var and const declarations (https://www.giraffeacademy.com/web-development/javascript/building-a-quiz/)
+  -Extra help to understand key Javascript scripts (https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37).  
+  -Understand how to design the quiz (https://www.sitepoint.com/simple-javascript-quiz/).  
+  -Understand var and const declarations (https://www.giraffeacademy.com/web-development/javascript/building-a-quiz/).
 
 ### Content 
 
-  -How to design, structure and write code instructions taken from (https://www.youtube.com/watch?v=PBcqGxrr9g8)
-  -The icons in the footer and header were taken from [Font Awesome](https://fontawesome.com/)
+  -How to design, structure and write code instructions taken from (https://www.youtube.com/watch?v=PBcqGxrr9g8).  
+  -The icons in the footer and header were taken from [Font Awesome](https://fontawesome.com/).
 
 ### Media
 
