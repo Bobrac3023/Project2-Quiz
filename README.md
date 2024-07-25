@@ -4,90 +4,87 @@
 
 ## Introduction 
 The project is conceived to test users knowledge on leaders who shaped India,right after independence from British rule. 
-The quiz will appeal to anyoe with an active interest in Indian political history,dating back to the mid nineteenth centur.
+The quiz will appeal to anyone with an active interest in Indian political history,dating back to the mid nineteenth centur.
 The quiz should tickle one's curiosity, to understand the roles played by these towering peronalities in shaping India, as we see it today.  
 
 ## Features 
--The project is written in HTML to define the structure, CSS for styling and Javascript to provide the logic.  
--It main page includes a title, a nav bar, the quiz area and a footer.  
--The quiz area includes a **question** section, **answer** section and a **next** button.  
--It presents the user with a set of **5 questions** and **4 answer options** to select from.  
--A **right** or **wrong** selection provides **visual representation** by change in color and an **alert pop-up**.  
--The answer options presented **grey out** after **any one** answer option is selected.  
--This grey out feature is **enabled** irrespective of a **right or wrong answer** choice.  
--The user has the option to skip a particular question or multiple questions if he/she so chooses to do so.  
--The Next button allows the user to move to the next set of question and answers.  
--At the end of **5 questions**,the **total score** is computed and presented to the user.  
--The user is also presented with the right answers with a clickable link that takes it to an external Wikipedia page.  
--Emphasis is more on Javascript and how it can be used to manipualte the DOM and style the CSS.  
--Judicous use of functions, object literals,constants, array and template literal make the code an easy read.  
--Extensive use of commands **GetElement**, **inneHTML**, **classlists** to create, remove, modify HTML Elements and style CSS is demonstrated.-Overall the flow of code is kept simple and **relevant comments** provided for better understanding and **intepretation**.  
-
-
-
+ -The project is written in HTML to define the structure, CSS for styling and Javascript to provide the logic.  
+ -Its main page includes a title, a nav bar, the quiz area and a footer.  
+ -The quiz area includes a **question** section, **answer** section and a **next** button.  
+ -It presents the user with a set of **5 questions** and **4 answer options** to select from.  
+ -A **right** or **wrong** selection provides **visual representation** by change in color and an **alert pop-up**.  
+ -The answer options presented **grey out** after **any one** answer option is selected.  
+ -This grey out feature is **enabled** irrespective of a **right or wrong answer** choice.  
+ -The user has the option to **skip** a particular question **or** multiple questions.  
+ -The **Next button** allows the user to move to the next set of question and answers.  
+ -At the end of **5 questions**,the **total score** is computed and presented to the user.  
+ -The user is also presented with the right answers with a clickable link that takes it to an external Wikipedia page.  
+ -Emphasis is more on Javascript and how it can be used to manipualte the DOM and style the CSS.  
+ -Judicous use of functions, object literals,constants, array and template literal make the code an easy read.  
+ -Extensive use of commands **GetElement**, **inneHTML**, **classlists** .  
+ -Overall the flow of code is kept simple and **relevant comments** provided for better understanding and **intepretation**.  
 
 
 ### Existing Features
 
 - __File_structure__
 
--Three main project files created using statndard naming conventions.  
--**index.html** for HTML,**style.css** for CSS and **script.js** for Javascript.
--assets folder holds tthe **css**, **images** and **js** sub-folders.  
--All relevant images for favicon and readme stored in he **images** sub-folder.  
+  -Three main project files created using statndard naming conventions.  
+  -**index.html** for HTML,**style.css** for CSS and **script.js** for Javascript.
+  -assets folder holds tthe **css**, **images** and **js** sub-folders.  
+  -All relevant images for favicon and readme stored in he **images** sub-folder.  
 
 
 - __Head_element__
 
--Language for the website is **US English**.  
--Meta tags and viewport included to make page responsive.
--Author and keywords included for serach engine optimization.  
--Links to favicon and CSS stylesheet includded.  
--**favicon** details includes three different screen sizes.  
--The title **Blue Heaven Quiz Master** defined here.  
+  -Language for the website is **US English**.  
+  -Meta tags and viewport included to make page responsive.
+  -Author and keywords included for serach engine optimization.  
+  -Links to favicon and CSS stylesheet includded.  
+  -**favicon** details includes three different screen sizes.  
+  -The title **Blue Heaven Quiz Master** defined here.  
 
-![head_element](assets/images/head_element.png)
+  ![head_element](assets/images/head_element.png)
 
 - __Header__
          
   -The Header contains the **H1** nested inside the **Body** element.  
-  - It displays a logo of a **piece of puzzle** downloaded from fontawesome website.  
+  -It displays a logo of a **piece of puzzle** downloaded from fontawesome website.  
 
   ![header](assets/images/header.png)
    
 - __Navigation Bar__
+   
+  -The navigation bar design features one unordered list that is fully responsive.  
+  -The responsive navigation bar includes links to the Logo of a **home** downloaded from **fontawesome** website. 
 
-  - The navigation bar design features one unordered list that is fully responsive.  
-  - The responsive navigation bar includes links to the Logo of a **home** downloaded from **fontawesome** website.  
   ![navbar](assets/images/nav_bar.png)
 
 
 - __HTML Main Quiz Section__
 
-
-  -The **quiz section** is dived into **TWO div elements**,**TWO h2**, **one Paragraph** and  **one button** element.  
-  -The **first h2 and the paragraph element** is configured to provide the quiz information including instructions.
-  -The first div nexted inside the **main div** is referenced using a class **question-area**.
-  -Nested inside this div is the **h2 element** designed to **display the questions**, referenced by **id="quiz"**.
-  -The second div is referenced by **id="answer-buttons"**, designed to display the answers from the **object literals** defined in Javascript.
+  -The **quiz section** is dived into **two div elements**,**two h2**, **one Paragraph** and  **one button** element.  
+  -The **first h2 and the paragraph element** is configured to provide the quiz information including instructions.  
+  -The first div nexted inside the **main div** is referenced using a class **question-area**.  
+  -Nested inside this div is the **h2 element** designed to **display the questions**, referenced by **id="quiz"**.  
+  -The second div is referenced by **id="answer-buttons"**, designed to display the answers from the **object literals** defined in Javascript.  
   -The button element is referenced using an **"id=next-button"** to enable user to navigate to next set of questions.  
   -The button element is access and modified using Javacript to **dipslay the "Play-again"** button at the end of the quiz.  
   
-![quiz section](assets/images/quiz_area.png)
-
+  ![quiz section](assets/images/quiz_area.png)
 
 
 - __script js section__
 
-  - As the emphasis of this project is on Javascript, it has been used extendsively to manipulate the HTML elementst.  
+  - As the emphasis of this project is on Javascript, it has been used extendsively to manipulate the HTML elements.  
   - There are a multiple functions that are part of the script. 
   - Each function is explained below.  
-  -    1.initiateQuiz- This function is to inititae the quiz.
-  -    2.displayQuestion- This function will display the questions from the array and answer options from object lterals.
-  -    3.resetState- to remove previous child elements.  
-  -    4.selectChoice- Actions to carry once user clicks on a particular answer.  
-  -    5.showScore- Actions to take to dispay final score.  
-  -    6.handleNextButton- Actions to take each time user clicks the **Next** button. 
+      -initiateQuiz- This function is to inititae the quiz.
+      -displayQuestion- This function will display the questions from the array and answer options from object lterals.
+      -resetState- to remove previous child elements.  
+      -selectChoice- Actions to carry once user clicks on a particular answer.  
+      -showScore- Actions to take to dispay final score.  
+      -handleNextButton- Actions to take each time user clicks the **Next** button. 
 
 
 
@@ -130,21 +127,51 @@ In this section, you need to convince the assessor that you have conducted enoug
 
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 ### Manual testing 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+-various manual tests were carried out to understand how the project functions. 
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+  -AsusLaptop with a screensize of 1920x1080
+  ![laptop_1920_external](assets/images/laptop_1920_external.png) 
+
+  -AsusLaptop with a screensize of 1920x1080-Color change after user selects right answer 
+  ![colcor_change_right_answer](assets/images/color_change_right_answer_laptop.png)
+
+  -AsusLaptop with a screensize of 1920x1080-Pop up after user selects right answer 
+  ![right_answer_popup_laptop](assets/images/right_answer_popup_laptop.png)
+
+  -AsusLaptop with a screensize of 1920x1080-color change after user selects wrong answer
+  ![color_change_wrong_answer_laptop](assets/images/color_change_wrong_answer_laptop.png)
+
+  -Samsung mobileA54 User opens link on mobile
+  ![samsung_quiz_main](assets/images/samung_quiz_main.png)
+
+  -Samsung mobileA54 User clicks correct answer
+  ![user_click_right](assets/images/samsung_user_click_right.png)
+
+  -Samsung mobileA54 User clicks wrong answer
+  ![user_click_wrong](assets/images/samsung_user_click_wrong.png)
+
+  -Samsung mobileA54 Final score on quiz completion
+  ![user_quiz_completion](assets/images/samsung_quiz_completion.png)
+
 
 
 ### Validator Testing 
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+  - No errors were returned when passing through the official.[W3c validator](https://validator.w3.org/#validate_by_input)
 
--JSHINT 
-- No errors were found when tested throgh the jshint testing site 
-![images](assets/images/jshint_testing.png)
+  ![html_validation](assets/images/html_validator.png)
+
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+
+  ![css_validation](assets/images/css_validation.png)
+
+- JSHINT 
+  - No errors were found when tested throgh the jshint testing site 
+
+  ![jshint_testing](assets/images/jshint_testing.png)
+
 ### Unfixed Bugs
 
 You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
@@ -154,8 +181,14 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
 
 - The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
+  - In the GitHub repository, navigate to the Settings tab, select pages, and change **Branch** to main hub from none.
+
+  ![select_branch_github_deployment](assets/images/select_branch_github_deployment.png)
+
+  - From the Actions tab, select Deployment to check deployment status and capture external link.
+
+  ![github_page_deployment](assets/images/github_page_deployment.png)
+
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
 The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
