@@ -116,7 +116,7 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 ### Features Left to Implement
 
   -A timer for approximately 15 mins.  
-  -A progress bar.
+  -A progress bar.  
   -The user is also presented with the right answers with a clickable link that takes it to an external Wikipedia page.    
 
 
@@ -209,6 +209,12 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
   -website viewed from Code Institute IDE Enviroment 
   ![website_code_ide_environment](readme.doc/website_code_ide_environment.png)
+
+  -use gitpod commands to add, commit code to gitub repository
+  ![git_add_commit_command](readme.doc/git_add_commit_commands.png)
+
+  -gitpod push command to push commited changed to github repository
+  ![git_push](readme.doc/git_push.png)
 
 ## Credits 
 

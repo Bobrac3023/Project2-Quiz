@@ -101,11 +101,11 @@ const totalQuestions = [{
     }
 ];
 
-// variables 
+// variables defined for html elements referenced by id
 const quizH2Element = document.getElementById("quiz");
 const answerButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-button");
-const scoreArea = document.getElementById("score-area");
+
 
 //variable to store question index and score 
 let presentQuestionIndex = 0;
@@ -137,6 +137,7 @@ function displayQuestion() {
         const button = document.createElement('button');
         //insert details to innerHTML of button Element from array and object literals
         button.innerHTML = choices.text;
+        //refer to a class in css
         button.classList.add('btn');
         // append button element as child inside the Div
         answerButton.appendChild(button);
@@ -148,14 +149,16 @@ function displayQuestion() {
     });
 }
 
-function selectChoice(e) {
-    let selectedBtn = e.target;
+function selectChoice(event) {
+    let selectedBtn = event.target;
     let isCorrect = selectedBtn.dataset.result === "true";
     if (isCorrect) {
+        //refer to a class in css
         selectedBtn.classList.add("correct");
         score++;
         alert("!!!!Great- This is the right answer!!!!");
     } else {
+        //refer to a class in css
         selectedBtn.classList.add("incorrect");
         alert(`!!! OOPS- This is INCORRECT!!!`);
 
@@ -180,8 +183,10 @@ function resetState() {
 function showscore() {
     resetState();
     quizH2Element.classList.add("score-count");
+    //use of backticks to display the whole string with variables
     quizH2Element.innerHTML = `You scored ${score} out of ${totalQuestions.length}!`;
     nextButton.innerHTML = "Play-Again";
+    //dispaly nextButton as a block element
     nextButton.style.display = "block";
 
 }
@@ -204,7 +209,7 @@ nextButton.addEventListener("click", () => {
         initiateQuiz();
     }
 });
-
+//fires when initial HTML document is completely loaded and parsed
 document.addEventListener("DOMContentLoaded", (event) => {
     displayQuestion();
 
