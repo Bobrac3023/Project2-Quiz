@@ -20,7 +20,7 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
  -At the end of **5 questions**,the **total score** is computed and presented to the user.  
  -Emphasis is more on Javascript and how it can be used to manipualte the DOM and style the CSS.  
  -Judicous use of functions, object literals,constants, array and template literal make the code an easy read.  
- -Extensive use of commands **GetElement**, **inneHTML**, **classlists** .  
+ -Extensive use of commands like **GetElement**, **innerHTML**, **classlists**
  -Overall the flow of code is kept simple and **relevant comments** provided for better understanding and **intepretation**.  
 
 
@@ -31,13 +31,13 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   -Three main project files created using statndard naming conventions.  
   -**index.html** for HTML,**style.css** for CSS and **script.js** for Javascript.
   -assets folder holds tthe **css**, **images** and **js** sub-folders.  
-  -All relevant images for favicon and readme stored in he **images** sub-folder.  
+  -Images for favicon stored in **images** sub-folder and readme images stored in **readme.doc**  
 
 
 - __Head_element__
 
   -Language for the website is **US English**.  
-  -Meta tags and viewport included to make page responsive.
+  -Meta tags and viewport included to make page responsive.  
   -Author and keywords included for serach engine optimization.  
   -Links to favicon and CSS stylesheet includded.  
   -**favicon** details includes three different screen sizes.  
@@ -62,11 +62,11 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
 - __HTML Main Quiz Section__
 
-  -The **main quiz section** is dived into **div elements**,**h2 elements**, **Paragraph element** and  **button element** element.  
+  -The **main quiz section** is dived into **div elements**,**h2 elements**, **paragraph element** and  **button** element.  
   -Immediate child elements **h2** and the **p element** are configured to provide the **quiz information** including instructions.  
-  -A child **div** referenced by class **question-area** displays questions through a child **h2** referenced from Javascript by **id="quiz"**. 
+  -A child **div** referenced by class **question-area** displays questions through a child **h2** referenced from Javascript by **id="quiz"**.  
   -Another div is referenced by id **answer-buttons**, designed to display the answers from the **object literals** defined in Javascript.  
-  -The button element referenced by id **"next-button** to enable user to navigate to next set of questions.  
+  -The button element is referenced by id **next-button** to enable users to navigate to next set of questions.  
   -Javascript accesses the button to dipslay the **Play-again** button at the end of the quiz.  
   
   ![quiz section](readme.doc/quiz_area.png)
@@ -77,22 +77,24 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   - As the emphasis of this project is on Javascript, it has been used extendsively to manipulate the HTML elements.  
   - There are a multiple functions that are part of the script. 
   - Each function is explained below.  
-      -initiateQuiz- This function is to inititae the quiz.
+      -initiateQuiz- This function is to inititae the quiz.  
       -displayQuestion- This function will display the questions from the array and answer options from object lterals.
       -resetState- to remove previous child elements.  
       -selectChoice- Actions to carry once user clicks on a particular answer.  
-      -showScore- Actions to take to dispay final score.  
+      -showScore- Actions to display final score.  
       -handleNextButton- Actions to take each time user clicks the **Next** button. 
 
   -Javscript Code validation of function initiateQuiz
+  
   ![python_tutor_code_visualization](readme.doc/python_tutor_code_visualization.png)
 
   -Javascript code validation of array and object literals 
+
   ![python_validation_array](readme.doc/python_validation_array.png)
 
 - __The Footer__ 
 
-  -The footer section includes links to the relevant social media sites for.  
+  -The footer section includes links to the relevant social media sites for facebook, instagram, youtube and linkdeln.  
   -For this project, they default to the login page of each social media icon.  
   -All fonts were used from fontawesome website along with the reference links.  
   -The links will open to a new tab to allow easy navigation for the user.  
@@ -100,13 +102,15 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   -All links were tested and found to be working fine. 
 
   ![Footer](readme.doc/footer.png)
+
   ![footer_icon_on_hover](/workspace/Project2-Quiz/readme.doc/footer_icon_on_hover.png)
+
   ![facebook_social_media_link](readme.doc/facebook_social_media_link.png)
 
 
 - __Images__
 
-  -The images folder provides all supporting images referenced in this readme file.
+  -The images referenced in this readme file are stored in readme.doc file.
   -The Favicon is also stored in this file. 
    
 
@@ -117,7 +121,7 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
   -A timer for approximately 15 mins.  
   -A progress bar.  
-  -The user is also presented with the right answers with a clickable link that takes it to an external Wikipedia page.    
+  -The user is presented with **right answers** and a clickable link opens in an external Wikipedia page.    
 
 
 ## Testing 
@@ -126,27 +130,35 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   -various manual tests were carried out to understand how the project functions. 
 
   -Asus Laptop with a screensize of 1920x1080
+
   ![laptop_1920_external](readme.doc/laptop_1920_external.png) 
 
-  -Asus Laptop with a screensize of 1920x1080-Color change after user selects right answer 
+  -Asus Laptop with a screensize of 1920x1080  **visual represetation by Color change for selected answer** 
+
   ![colcor_change_right_answer](readme.doc/color_change_right_answer_laptop.png)
 
-  -Asus Laptop with a screensize of 1920x1080-Pop up after user selects right answer 
+  -Asus Laptop with a screensize of 1920x1080  **Pop up after user selects right answer** 
+
   ![right_answer_popup_laptop](readme.doc/right_answer_popup_laptop.png)
 
-  -Asus Laptop with a screensize of 1920x1080-color change after user selects wrong answer
+  -Asus Laptop with a screensize of 1920x1080-  **visual represetation by Color chang when user selects wrong answer**
+
   ![color_change_wrong_answer_laptop](readme.doc/color_change_wrong_answer_laptop.png)
 
-  -Samsung mobile A54 User opens link on mobile
+  -Samsung mobile A54 **User opens link on mobile**
+
   ![samsung_quiz_main](readme.doc/samung_quiz_main.png)
 
-  -Samsung mobile A54 User clicks correct answer
+  -Samsung mobile A54 **User clicks correct answer**
+
   ![user_click_right](readme.doc/samsung_user_click_right.png)
  
-  -Samsung mobile A54 User clicks wrong answer
+  -Samsung mobile A54 **User clicks wrong answer**
+
   ![user_click_wrong](readme.doc/samsung_user_click_wrong.png)
 
-  -Samsung mobile A54 Final score on quiz completion
+  -Samsung mobile A54 **Final score on completion of quiz**
+
   ![user_quiz_completion](readme.doc/samsung_quiz_completion.png)
 
 ### Browser inspection
@@ -180,7 +192,8 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
   ![javascript_syntaxerror](readme.doc/javascript_syntaxerror.png)
 
-  -Syntax error when inspected via the browser 
+  -Syntax error when inspected via the browser
+
   ![script_js_deployed_twice](readme.doc/script_js_deployed_twice.png)
 
 
@@ -188,8 +201,9 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
 ### deployment from GitHub
 
-  -The site was deployed to GitHub pages as follows: 
-  -In the GitHub repository, navigate to the Settings tab, select pages, and change **Branch** to main hub from none.
+  -The site was deployed to GitHub pages as follows:
+      -In the GitHub repository, navigate to the Settings tab, 
+      -select pages, and change **Branch** to main hub from none.
 
   ![select_branch_github_deployment](readme.doc/select_branch_github_deployment.png)
 
@@ -197,23 +211,26 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
   ![github_page_deployment](readme.doc/github_page_deployment.png)
 
-  -Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display 
-  to indicate the successful deployment. 
+  -Once the main branch has been selected, the page will automatically refresh to indicate the successful deployment. 
 
   -The live link can be found here - https://bobrac3023.github.io/Project2-Quiz/
 
 ### deployment from gitpod
 
   -Site deployed from Gitpod using pythhon http server 
+
   ![python3_http_server](readme.doc/python3_http_server.png)
 
   -website viewed from Code Institute IDE Enviroment 
+
   ![website_code_ide_environment](readme.doc/website_code_ide_environment.png)
 
   -use gitpod commands to add, commit code to gitub repository
+
   ![git_add_commit_command](readme.doc/git_add_commit_commands.png)
 
   -gitpod push command to push commited changed to github repository
+
   ![git_push](readme.doc/git_push.png)
 
 ## Credits 
