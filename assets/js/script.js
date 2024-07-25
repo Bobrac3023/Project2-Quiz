@@ -158,7 +158,7 @@ function selectChoice(e) {
     } else {
         selectedBtn.classList.add("incorrect");
         alert(`!!! OOPS- This is INCORRECT!!!`);
-        //alert(`!!! OPS- This is INCORRECT!!!: ` + question.choices.find(result => result.true).text);
+
 
     }
     Array.from(answerButton.children).forEach(button => {
@@ -183,6 +183,7 @@ function showscore() {
     quizH2Element.innerHTML = `You scored ${score} out of ${totalQuestions.length}!`;
     nextButton.innerHTML = "Play-Again";
     nextButton.style.display = "block";
+
 }
 
 // function for next Button 
@@ -204,4 +205,7 @@ nextButton.addEventListener("click", () => {
     }
 });
 
-displayQuestion();
+document.addEventListener("DOMContentLoaded", (event) => {
+    displayQuestion();
+
+});

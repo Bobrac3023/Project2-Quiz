@@ -1,6 +1,6 @@
 # India- A History Quiz 
  
-![Blow up of main page](assets/images/main_blowup_page.png)
+![Blow up of main page](readme.doc/main_blowup_page.png)
 
 ## Introduction 
 The project is conceived to test users knowledge on leaders who shaped India,right after independence from British rule. 
@@ -18,7 +18,6 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
  -The user has the option to **skip** a particular question **or** multiple questions.  
  -The **Next button** allows the user to move to the next set of question and answers.  
  -At the end of **5 questions**,the **total score** is computed and presented to the user.  
- -The user is also presented with the right answers with a clickable link that takes it to an external Wikipedia page.  
  -Emphasis is more on Javascript and how it can be used to manipualte the DOM and style the CSS.  
  -Judicous use of functions, object literals,constants, array and template literal make the code an easy read.  
  -Extensive use of commands **GetElement**, **inneHTML**, **classlists** .  
@@ -44,34 +43,33 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   -**favicon** details includes three different screen sizes.  
   -The title **Blue Heaven Quiz Master** defined here.  
 
-  ![head_element](assets/images/head_element.png)
+  ![head_element](readme.doc/head_element.png)
 
 - __Header__
          
   -The Header contains the **H1** nested inside the **Body** element.  
   -It displays a logo of a **piece of puzzle** downloaded from fontawesome website.  
 
-  ![header](assets/images/header.png)
+  ![header](readme.doc/header.png)
    
 - __Navigation Bar__
    
   -The navigation bar design features one unordered list that is fully responsive.  
   -The responsive navigation bar includes links to the Logo of a **home** downloaded from **fontawesome** website. 
 
-  ![navbar](assets/images/nav_bar.png)
+  ![navbar](readme.doc/nav_bar.png)
 
 
 - __HTML Main Quiz Section__
 
-  -The **quiz section** is dived into **two div elements**,**two h2**, **one Paragraph** and  **one button** element.  
-  -The **first h2 and the paragraph element** is configured to provide the quiz information including instructions.  
-  -The first div nexted inside the **main div** is referenced using a class **question-area**.  
-  -Nested inside this div is the **h2 element** designed to **display the questions**, referenced by **id="quiz"**.  
-  -The second div is referenced by **id="answer-buttons"**, designed to display the answers from the **object literals** defined in Javascript.  
-  -The button element is referenced using an **"id=next-button"** to enable user to navigate to next set of questions.  
-  -The button element is access and modified using Javacript to **dipslay the "Play-again"** button at the end of the quiz.  
+  -The **main quiz section** is dived into **div elements**,**h2 elements**, **Paragraph element** and  **button element** element.  
+  -Immediate child elements **h2** and the **p element** are configured to provide the **quiz information** including instructions.  
+  -A child **div** referenced by class **question-area** displays questions through a child **h2** referenced from Javascript by **id="quiz"**. 
+  -Another div is referenced by id **answer-buttons**, designed to display the answers from the **object literals** defined in Javascript.  
+  -The button element referenced by id **"next-button** to enable user to navigate to next set of questions.  
+  -Javascript accesses the button to dipslay the **Play-again** button at the end of the quiz.  
   
-  ![quiz section](assets/images/quiz_area.png)
+  ![quiz section](readme.doc/quiz_area.png)
 
 
 - __script js section__
@@ -87,10 +85,10 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
       -handleNextButton- Actions to take each time user clicks the **Next** button. 
 
   -Javscript Code validation of function initiateQuiz
-  ![python_tutor_code_visualization](assets/images/python_tutor_code_visualization.png)
+  ![python_tutor_code_visualization](readme.doc/python_tutor_code_visualization.png)
 
   -Javascript code validation of array and object literals 
-  ![python_validation_array](assets/images/python_validation_array.png)
+  ![python_validation_array](readme.doc/python_validation_array.png)
 
 - __The Footer__ 
 
@@ -99,26 +97,27 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   -All fonts were used from fontawesome website along with the reference links.  
   -The links will open to a new tab to allow easy navigation for the user.  
   -The footer is valuable to the user as it encourages them to keep connected via social media.  
-  -all links were tested and found to be working fine. 
+  -All links were tested and found to be working fine. 
 
-  ![Footer](assets/images/footer.png)
-  ![footer_icon_on_hover](assets/images/footer_icon_on_hover.png)
-  ![facebook_social_media_link](assets/images/facebook_social_media_link.png)
+  ![Footer](readme.doc/footer.png)
+  ![footer_icon_on_hover](/workspace/Project2-Quiz/readme.doc/footer_icon_on_hover.png)
+  ![facebook_social_media_link](readme.doc/facebook_social_media_link.png)
 
 
 - __Images__
 
-  -The images folder provides all supporting images referenced in this readment file.
+  -The images folder provides all supporting images referenced in this readme file.
   -The Favicon is also stored in this file. 
    
 
-  ![favicon](assets/images/dodger.png)
+  ![favicon](readme.doc/dodger.png)
 
 
 ### Features Left to Implement
 
-  -A timer for apprimately 15 mins.  
-  -A progress bar.  
+  -A timer for approximately 15 mins.  
+  -A progress bar.
+  -The user is also presented with the right answers with a clickable link that takes it to an external Wikipedia page.    
 
 
 ## Testing 
@@ -126,29 +125,35 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 ### Manual testing 
   -various manual tests were carried out to understand how the project functions. 
 
-  -AsusLaptop with a screensize of 1920x1080
-  ![laptop_1920_external](assets/images/laptop_1920_external.png) 
+  -Asus Laptop with a screensize of 1920x1080
+  ![laptop_1920_external](readme.doc/laptop_1920_external.png) 
 
-  -AsusLaptop with a screensize of 1920x1080-Color change after user selects right answer 
-  ![colcor_change_right_answer](assets/images/color_change_right_answer_laptop.png)
+  -Asus Laptop with a screensize of 1920x1080-Color change after user selects right answer 
+  ![colcor_change_right_answer](readme.doc/color_change_right_answer_laptop.png)
 
-  -AsusLaptop with a screensize of 1920x1080-Pop up after user selects right answer 
-  ![right_answer_popup_laptop](assets/images/right_answer_popup_laptop.png)
+  -Asus Laptop with a screensize of 1920x1080-Pop up after user selects right answer 
+  ![right_answer_popup_laptop](readme.doc/right_answer_popup_laptop.png)
 
-  -AsusLaptop with a screensize of 1920x1080-color change after user selects wrong answer
-  ![color_change_wrong_answer_laptop](assets/images/color_change_wrong_answer_laptop.png)
+  -Asus Laptop with a screensize of 1920x1080-color change after user selects wrong answer
+  ![color_change_wrong_answer_laptop](readme.doc/color_change_wrong_answer_laptop.png)
 
-  -Samsung mobileA54 User opens link on mobile
-  ![samsung_quiz_main](assets/images/samung_quiz_main.png)
+  -Samsung mobile A54 User opens link on mobile
+  ![samsung_quiz_main](readme.doc/samung_quiz_main.png)
 
-  -Samsung mobileA54 User clicks correct answer
-  ![user_click_right](assets/images/samsung_user_click_right.png)
+  -Samsung mobile A54 User clicks correct answer
+  ![user_click_right](readme.doc/samsung_user_click_right.png)
  
-  -Samsung mobileA54 User clicks wrong answer
-  ![user_click_wrong](assets/images/samsung_user_click_wrong.png)
+  -Samsung mobile A54 User clicks wrong answer
+  ![user_click_wrong](readme.doc/samsung_user_click_wrong.png)
 
-  -Samsung mobileA54 Final score on quiz completion
-  ![user_quiz_completion](assets/images/samsung_quiz_completion.png)
+  -Samsung mobile A54 Final score on quiz completion
+  ![user_quiz_completion](readme.doc/samsung_quiz_completion.png)
+
+### Browser inspection
+
+  -Code inspected in Chrome browser during execution.
+
+  ![inspect_code_browser](readme.doc/inspect_code_browser.png)
 
 
 ### Validator Testing 
@@ -156,38 +161,54 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 - HTML
    -No errors were returned when passing through the official.[W3c validator](https://validator.w3.org/#validate_by_input)
 
-   ![html_validation](assets/images/html_validator.png)
+   ![html_validation](readme.doc/html_validator.png)
 
 - CSS
    -No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
-   ![css_validation](assets/images/css_validation.png)
+   ![css_validation](readme.doc/css_validation.png)
 
 - JSHINT 
    -No errors were found when tested throgh the jshint testing site 
 
-   ![jshint_testing](assets/images/jshint_testing.png)
+   ![jshint_testing](readme.doc/jshint_testing.png)
 
-### Unfixed Bugs
+### fixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+  -The script.js was loading twice from HTML file as it was declared twice.However, the site functioned except throwing the error.
+  -The bug was fixed.
+
+  ![javascript_syntaxerror](readme.doc/javascript_syntaxerror.png)
+
+  -Syntax error when inspected via the browser 
+  ![script_js_deployed_twice](readme.doc/script_js_deployed_twice.png)
+
 
 ## Deployment
+
+### deployment from GitHub
 
   -The site was deployed to GitHub pages as follows: 
   -In the GitHub repository, navigate to the Settings tab, select pages, and change **Branch** to main hub from none.
 
-  ![select_branch_github_deployment](assets/images/select_branch_github_deployment.png)
+  ![select_branch_github_deployment](readme.doc/select_branch_github_deployment.png)
 
   -From the Actions tab, select Deployment to check deployment status and capture external link.
 
-  ![github_page_deployment](assets/images/github_page_deployment.png)
+  ![github_page_deployment](readme.doc/github_page_deployment.png)
 
   -Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display 
   to indicate the successful deployment. 
 
   -The live link can be found here - https://bobrac3023.github.io/Project2-Quiz/
 
+### deployment from gitpod
+
+  -Site deployed from Gitpod using pythhon http server 
+  ![python3_http_server](readme.doc/python3_http_server.png)
+
+  -website viewed from Code Institute IDE Enviroment 
+  ![website_code_ide_environment](readme.doc/website_code_ide_environment.png)
 
 ## Credits 
 
@@ -205,22 +226,3 @@ You will need to mention unfixed bugs and why they were not fixed. This section 
   -The photo used for Favicon is from the author's own cat
  
 
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
-
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
