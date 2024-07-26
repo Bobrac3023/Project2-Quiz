@@ -5,7 +5,7 @@
 ## Introduction 
 The project is conceived to test users knowledge on leaders who shaped India,right after independence from British rule. 
 It will appeal to anyone with an active interest in Indian political history,dating back to the mid nineteenth centur.
-The quiz should tickle one's curiosity, to understand the roles played by these towering peronalities in shaping India, as we see it today.The idea and concept behind this quiz is simple, yet powerful. One needss to think of this from an if-elese loop perspective that is based on the simple premise- **if you know the answer, fine, else continue to iterate till the score is 5 on 5.** This thinking is also the reason that the quiz does not show the right answer, but invites the user to do their own research.    
+The quiz should tickle one's curiosity, to understand the roles played by these towering peronalities in shaping India, as we see it today.The idea and concept behind this quiz is simple, yet powerful. One needs to think of this from an **if-else loop** perspective that is based on the simple premise- **if you know the answer, fine, else continue to iterate till the score is 5 on 5.** This thinking is also the reason that the quiz does not show the right answers, but invites the user to do their own research.    
 
 ## Features 
  -The project is written in HTML to define the structure, CSS for styling and Javascript to provide the logic.  
@@ -20,7 +20,7 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
  -At the end of **5 questions**,the **total score** is computed and presented to the user.  
  -Emphasis is more on Javascript and how it can be used to manipualte the DOM and style the CSS.  
  -Judicous use of functions, object literals,constants, array and template literal make the code an easy read.  
- -Extensive use of commands like **GetElement**, **innerHTML**, **classlists**
+ -Extensive use of commands like **GetElement**, **innerHTML**, **classlists**.  
  -Overall the flow of code is kept simple and **relevant comments** provided for better understanding and **intepretation**.  
 
 
