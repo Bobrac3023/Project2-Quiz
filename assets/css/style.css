@@ -13,7 +13,7 @@
     box-shadow: 0 2px 2px black;
 }
 
-/* Naigation bar  styling*/
+/* styling navigation bar */
 .navbar {
     background-color: coral;
     list-style-type: none;
@@ -22,25 +22,28 @@
     margin: 0;
 }
 
-/* Naigation list-items  styling*/
+/* styling navigation list-items */
 .navbar li {
     display: inline-block;
     font-size: 20px;
     padding: 10px;
 }
+
 /* Main body element */
 body {
     background-color: aliceblue;
     min-height: 100vh;
-    display: flex; 
+    display: flex;
     flex-direction: column;
 }
+
 /* style h2 header */
 #h2quiz-area {
     margin: 10px auto 10px;
     text-align: center;
 }
-/* style paragrpah that display quiz instructions */
+
+/* style paragraph that displays quiz instructions */
 #p2quiz-area {
     margin: 10px auto 19px;
     text-align: center;
@@ -53,12 +56,13 @@ body {
     margin: 35px auto 72px;
 
 }
-
+/*style questions */
 .question-area h2 {
     font-size: x-large;
     color: brown;
     font-weight: bolder;
 }
+
 /* created from javascrpt and called from displayQuestion function*/
 .btn {
     width: 100%;
@@ -76,9 +80,11 @@ body {
     color: aqua
 }
 
+/* id for div element */
 #answer-buttons {
     font-weight: bolder;
 }
+
 /* style button to go to next set of questions*/
 #next-button {
     cursor: pointer;
@@ -106,14 +112,15 @@ body {
 /* for final score created from javascript*/
 .score-count {
     text-align: center;
-    
+
 }
 
-/* footer styling*/
+/* style footer element*/
 #foot {
-    margin-top:auto;
+    margin-top: auto;
 }
-/* footer navbar styling*/
+
+/* style footer navbar element*/
 .nav {
     background-color: coral;
     list-style-type: none;
@@ -122,7 +129,7 @@ body {
     margin: 0;
 }
 
-/* footer nvabar list items styling*/
+/* style footer navbar list items */
 .nav li {
     display: inline-block;
     font-size: 20px;

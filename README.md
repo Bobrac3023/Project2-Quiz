@@ -4,8 +4,8 @@
 
 ## Introduction 
 The project is conceived to test users knowledge on leaders who shaped India,right after independence from British rule. 
-The quiz will appeal to anyone with an active interest in Indian political history,dating back to the mid nineteenth centur.
-The quiz should tickle one's curiosity, to understand the roles played by these towering peronalities in shaping India, as we see it today.  
+It will appeal to anyone with an active interest in Indian political history,dating back to the mid nineteenth centur.
+The quiz should tickle one's curiosity, to understand the roles played by these towering peronalities in shaping India, as we see it today.The idea and concept behind this quiz is simple, yet powerful. One needss to think of this from an if-elese loop perspective that is based on the simple premise- **if you know the answer, fine, else continue to iterate till the score is 5 on 5.** This thinking is also the reason that the quiz does not show the right answer, but invites the user to do their own research.    
 
 ## Features 
  -The project is written in HTML to define the structure, CSS for styling and Javascript to provide the logic.  
@@ -62,7 +62,7 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
 - __HTML Main Quiz Section__
 
-  -The **main quiz section** is dived into **div elements**,**h2 elements**, **paragraph element** and  **button** element.  
+  -The **main quiz section** is divied into **div elements**,**h2 elements**, **paragraph element** and  **button** element.  
   -Immediate child elements **h2** and the **p element** are configured to provide the **quiz information** including instructions.  
   -A child **div** referenced by class **question-area** displays questions through a child **h2** referenced from Javascript by **id="quiz"**.  
   -Another div is referenced by id **answer-buttons**, designed to display the answers from the **object literals** defined in Javascript.  
@@ -74,17 +74,22 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
 - __script js section__
 
-  - As the emphasis of this project is on Javascript, it has been used extendsively to manipulate the HTML elements.  
-  - There are a multiple functions that are part of the script. 
-  - Each function is explained below.  
+  -As the emphasis of this project is on Javascript, it has been used extendsively to manipulate the HTML elements.  
+  -There are a multiple functions that are part of the script. 
+  -Each function is explained below.  
       -initiateQuiz- This function is to inititae the quiz.  
       -displayQuestion- This function will display the questions from the array and answer options from object lterals.  
       -resetState- to remove previous child elements.  
       -selectChoice- Actions to carry once user clicks on a particular answer.  
       -showScore- Actions to display final score.  
-      -handleNextButton- Actions to take each time user clicks the **Next** button. 
+      -handleNextButton- Actions to take each time user clicks the **Next** button.  
+  -Constant variables declared outside the function at global level are referenced from within the function to manipulate the DOM and create, remove, append HTML elements.  
+  -The logic inside many of the functions is to reference the functional( defied with the local scope) or global constants, get Elements by their id, class or tag name and them manipulate them.  
+  -The elements thus referenced are used to create new Elements, append or remove child elemetns and change the innerHTML content.
+    
 
-  -Javscript Code validation of function initiateQuiz
+
+  -Code validation of Javascript function **initiateQuiz**
 
   ![python_tutor_code_visualization](readme.doc/python_tutor_code_visualization.png)
 
@@ -123,7 +128,10 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
   -A timer for approximately 15 mins.  
   -A progress bar.  
-  -The user is presented with **right answers** and a clickable link opens in an external Wikipedia page.    
+  -With a score of all correct, the user is presented with **right answers** and a clickable link to an external Wikipedia page.  
+  -Once user gets all 5 questions right, throw up a new set of questions and the fun continues.  
+  -Randomize the questions.  
+      
 
 
 ## Testing 
@@ -218,7 +226,7 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
 ### deployment from gitpod
 
-  -Site deployed from Gitpod using pythhon http server 
+  -Site deployed from Gitpod using python http server 
 
   ![python3_http_server](readme.doc/python3_http_server.png)
 
@@ -230,7 +238,7 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
   ![git_add_commit_command](readme.doc/git_add_commit_commands.png)
 
-  -gitpod push command to push commited changed to github repository
+  -gitpod push command to push commited changes to github repository
 
   ![git_push](readme.doc/git_push.png)
 

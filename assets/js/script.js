@@ -124,11 +124,11 @@ function initiateQuiz() {
 //function to display questions
 function displayQuestion() {
     resetState();
-    /* var to get questions with index 0*/
+    //var to get questions with index 0
     let questionBank = totalQuestions[presentQuestionIndex];
-    /* increment question by one*/
+    // increment question by one
     let questionNo = presentQuestionIndex + 1;
-    /* display question */
+    // display question 
     quizH2Element.innerHTML = questionNo + "." + questionBank.question;
 
     // display answers with 'forEach' loop method and arrow function
@@ -160,7 +160,7 @@ function selectChoice(event) {
     } else {
         //refer to a class in css
         selectedBtn.classList.add("incorrect");
-        alert(`!!! OOPS- This is INCORRECT!!!`);
+        alert(`!!! OOPS- This is INCORRECT !!!`);
 
 
     }
