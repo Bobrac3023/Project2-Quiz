@@ -105,6 +105,7 @@ const totalQuestions = [{
 const quizH2Element = document.getElementById("quiz");
 const answerButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-button");
+const resetButton = document.getElementById("reset-button");
 
 
 //variable to store question index and score 

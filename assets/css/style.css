@@ -85,6 +85,11 @@ body {
     font-weight: bolder;
 }
 
+/* id for div element */
+#reset-button {
+    font-weight: bolder;
+}
+
 /* style button to go to next set of questions*/
 #next-button {
     cursor: pointer;
