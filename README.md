@@ -8,20 +8,20 @@ It will appeal to anyone with an active interest in Indian political history,dat
 The quiz should tickle one's curiosity, to understand the roles played by these towering peronalities in shaping India, as we see it today.The idea and concept behind this quiz is simple, yet powerful. One needs to think of this from an **if-else loop** perspective that is based on the simple premise- **if you know the answer, fine, else continue to iterate till the score is 5 on 5.** This thinking is also the reason that the quiz does not show the right answers, but invites the user to do their own research.    
 
 ## Features 
- -The project is written in HTML to define the structure, CSS for styling and Javascript to provide the logic.  
- -Its main page includes a title, a nav bar, the quiz area and a footer.  
- -The quiz area includes a **question** section, **answer** section and a **next** button.  
- -It presents the user with a set of **5 questions** and **4 answer options** to select from.  
- -A **right** or **wrong** selection provides **visual representation** by change in color and an **alert pop-up**.  
- -The answer options presented **grey out** after **any one** answer option is selected.  
- -This grey out feature is **enabled** irrespective of a **right or wrong answer** choice.  
- -The user has the option to **skip** a particular question **or** multiple questions.  
- -The **Next button** allows the user to move to the next set of question and answers.  
- -At the end of **5 questions**,the **total score** is computed and presented to the user.  
- -Emphasis is more on Javascript and how it can be used to manipualte the DOM and style the CSS.  
- -Judicous use of functions, object literals,constants, array and template literal make the code an easy read.  
- -Extensive use of commands like **GetElement**, **innerHTML**, **classlists**.  
- -Overall the flow of code is kept simple and **relevant comments** provided for better understanding and **intepretation**.  
+ -  The project is written in HTML to define the structure, CSS for styling and Javascript to provide the logic.  
+ -  Its main page includes a title, a nav bar, the quiz area and a footer.  
+ -  The quiz area includes a **question** section, **answer** section and a **next** button.  
+ -  It presents the user with a set of **5 questions** and **4 answer options** to select from.  
+ -  A **right** or **wrong** selection provides **visual representation** by change in color and an **alert pop-up**.  
+ -  The answer options presented **grey out** after **any one** answer option is selected.  
+ -  This grey out feature is **enabled** irrespective of a **right or wrong answer** choice.  
+ -  The user has the option to **skip** a particular question **or** multiple questions.  
+ -  The **Next button** allows the user to move to the next set of question and answers.  
+ -  At the end of **5 questions**,the **total score** is computed and presented to the user.  
+ -  Emphasis is more on Javascript and how it can be used to manipualte the DOM and style the CSS.  
+ -  Judicous use of functions, object literals,constants, array and template literal make the code an easy read.  
+ -  Extensive use of commands like **GetElement**, **innerHTML**, **classlists**.  
+ -  Overall the flow of code is kept simple and **relevant comments** provided for better understanding and **intepretation**.  
 
 
 ### Existing Features
