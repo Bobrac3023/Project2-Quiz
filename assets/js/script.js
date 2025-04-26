@@ -116,11 +116,12 @@ const nextButton = document.getElementById("next-button");
 let questionIndex = 0;
 let score = 0;
 
+//function to shuffle questions
 function randomArray(array) {
   for (let r = array.length - 1; r > 0; r--) {
     const b = Math.floor(Math.random() * (r + 1));
     // Swap the elements at index r and b
-    [array[r], array[b]] = [array[b], array[r]]; // Swap
+    [array[r], array[b]] = [array[b], array[r]];
   }
 }
 
@@ -130,7 +131,7 @@ function initiateQuiz() {
   questionIndex = 0;
   //reset score index to zero
   score = 0;
-  randomArray(quizQuestions); // 🎯 Shuffle questions every new quiz
+  randomArray(quizQuestions); // Shuffle questions every new quiz
   nextButton.style.display = "none";
   displayQuestion();
 }
@@ -147,21 +148,24 @@ function displayQuestion() {
   // display question
   questionButton.innerHTML = questionNo + "." + questionBank.question;
   // shuffle the answer choices
-  randomArray(questionBank.choices); 
+  randomArray(questionBank.choices);
+  callAnswers(questionBank.choices); // Call the next function to display answers
+}
 
-  // display answers with 'forEach' loop method and arrow function
-  questionBank.choices.forEach((choices) => {
+// function to display answers
+function callAnswers(choices) {
+  choices.forEach((choice) => {
     // Create 'Button' element
     const button = document.createElement("button");
     //insert details to innerHTML of button Element from array and object literals
-    button.innerHTML = choices.text;
+    button.innerHTML = choice.text;
     //refer to a class in css
     button.classList.add("btn");
     // append button element as child inside the Div
     answerButton.appendChild(button);
     //Create ifloop when user selects an option
-    if (choices.result) {
-      button.dataset.result = choices.result;
+    if (choice.result) {
+      button.dataset.result = choice.result;
     }
     button.addEventListener("click", selectChoice);
   });
@@ -224,7 +228,7 @@ nextButton.addEventListener("click", () => {
   if (questionIndex <= quizQuestions.length) {
     handleNextButton();
   } else {
-    initiateQuiz(); // Reset quiz if play again
+    initiateQuiz(); // Reset quiz if playing again
   }
 });
 
