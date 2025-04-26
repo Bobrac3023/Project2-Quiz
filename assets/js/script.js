@@ -116,12 +116,21 @@ const nextButton = document.getElementById("next-button");
 let questionIndex = 0;
 let score = 0;
 
+function randomArray(array) {
+  for (let r = array.length - 1; r > 0; r--) {
+    const b = Math.floor(Math.random() * (r + 1));
+    // Swap the elements at index r and b
+    [array[r], array[b]] = [array[b], array[r]]; // Swap
+  }
+}
+
 // function to start quiz
 function initiateQuiz() {
   //reset question index to zero
   questionIndex = 0;
   //reset score index to zero
   score = 0;
+  randomArray(quizQuestions); // 🎯 Shuffle questions every new quiz
   nextButton.style.display = "none";
   displayQuestion();
 }
@@ -137,6 +146,8 @@ function displayQuestion() {
   let questionNo = questionIndex + 1;
   // display question
   questionButton.innerHTML = questionNo + "." + questionBank.question;
+  // shuffle the answer choices
+  randomArray(questionBank.choices); 
 
   // display answers with 'forEach' loop method and arrow function
   questionBank.choices.forEach((choices) => {
