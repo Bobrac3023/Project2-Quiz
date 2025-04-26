@@ -1,4 +1,4 @@
-const totalQuestions = [
+const quizQuestions = [
   {
     question: "Who was the first president of independent India?",
     choices: [
@@ -111,20 +111,18 @@ const totalQuestions = [
 const questionButton = document.getElementById("quiz");
 const answerButton = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-button");
-const refreshButton = document.getElementById("refresh-button");
 
 //variable to store question index and score
-let presentQuestionIndex = 0;
+let questionIndex = 0;
 let score = 0;
 
 // function to start quiz
 function initiateQuiz() {
   //reset question index to zero
-  presentQuestionIndex = 0;
+  questionIndex = 0;
   //reset score index to zero
   score = 0;
   nextButton.style.display = "none";
-  refreshButton.style.display = "none";
   displayQuestion();
 }
 
@@ -134,9 +132,9 @@ function displayQuestion() {
   // Clears old answer buttons
   resetState();
   // Gets the current question from totalQuestions
-  let questionBank = totalQuestions[presentQuestionIndex];
+  let questionBank = quizQuestions[questionIndex];
   // increment question by one
-  let questionNo = presentQuestionIndex + 1;
+  let questionNo = questionIndex + 1;
   // display question
   questionButton.innerHTML = questionNo + "." + questionBank.question;
 
@@ -150,7 +148,7 @@ function displayQuestion() {
     button.classList.add("btn");
     // append button element as child inside the Div
     answerButton.appendChild(button);
-    //Create ifLoop when user selects an option
+    //Create ifloop when user selects an option
     if (choices.result) {
       button.dataset.result = choices.result;
     }
@@ -172,7 +170,7 @@ function selectChoice(event) {
     alert(`!!! OOPS- This is INCORRECT !!!`);
   }
   Array.from(answerButton.children).forEach((button) => {
-    if (button.dataset.correct === "true") {
+    if (button.dataset.result === "true") {
       button.classList.add("correct");
     }
     button.disabled = true;
@@ -187,46 +185,39 @@ function resetState() {
     answerButton.removeChild(answerButton.firstChild);
   }
 }
-//function for final score
+//function to display final score
 function showscore() {
   resetState();
   questionButton.classList.add("score-count");
   //use of backticks to display the whole string with variables
-  questionButton.innerHTML = `You scored ${score} out of ${totalQuestions.length}!`;
+  questionButton.innerHTML = `You scored ${score} out of ${quizQuestions.length}!`;
+  // Next button change to "play again"
   nextButton.innerHTML = "Play-Again";
-  //dispaly nextButton as a block element
+  //display nextButton as a block element
   nextButton.style.display = "block";
-  refreshButton.style.display = "none";
 }
 
 // function for next Button
 function handleNextButton() {
-  presentQuestionIndex++;
-  if (presentQuestionIndex < totalQuestions.length) {
+  questionIndex++;
+  if (questionIndex < quizQuestions.length) {
     displayQuestion();
   } else {
     showscore();
   }
 }
 
-//eventListener when user clicks next button
+// showscore() function above changes the nextButton.innerHTML to "Play Again",
+// event listener has to distinguish between "NEXT" and "Play Again" modes.
 nextButton.addEventListener("click", () => {
-    if (presentQuestionIndex <= totalQuestions.length) {
-        handleNextButton();
-    } else {
-        initiateQuiz();
-    }
+  if (questionIndex <= quizQuestions.length) {
+    handleNextButton();
+  } else {
+    initiateQuiz(); // Reset quiz if play again
+  }
 });
-
-// function for refresh Button
-function handlerefreshButton() {
-  initiateQuiz();
-}
-
-//eventListener when user clicks refresh button
-refreshButton.addEventListener("click", handlerefreshButton);
 
 //fires when initial HTML document is completely loaded and parsed
 document.addEventListener("DOMContentLoaded", (event) => {
-  displayQuestion();
+  initiateQuiz();
 });
