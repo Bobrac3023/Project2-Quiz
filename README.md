@@ -10,7 +10,9 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 ## Features 
  -  The project is written in HTML to define the structure, CSS for styling and Javascript to provide the logic.  
  -  Its main page includes a title, a nav bar, the quiz area and a footer.  
- -  The quiz area includes a **question** section, **answer** section and a **next** button.  
+ -  The quiz area includes a **question** section, **answer** section and a **next** button.
+ -  The**Next** button is only visibile after the user select the answer to the first question.
+ -  The questions and answers are configured to be displayed randomly, every time a user decides to play the game again.  
  -  It presents the user with a set of **5 questions** and **4 answer options** to select from.  
  -  A **right** or **wrong** selection provides **visual representation** by change in color and an **alert pop-up**.  
  -  The answer options presented **grey out** after **any one** answer option is selected.  
@@ -130,7 +132,7 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   -A progress bar.  
   -With a score of all correct, the user is presented with **right answers** and a clickable link to an external Wikipedia page.  
   -Once user gets all 5 questions right, throw up a new set of questions and the fun continues.  
-  -Randomize the questions.  
+  
       
 
 
