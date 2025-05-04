@@ -138,7 +138,7 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 - The elements thus referenced are used to create new Elements, append or remove child elemetns and change the innerHTML content.
     
 
-## Javasecript Function Validation.
+## Javascript Function Validation.
 
 - This is main landing page when for the user.
 - This is where the initiateQuiz( ) , displayQuestion( ), callAnswers( ) functions are validated.
@@ -152,8 +152,8 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   - Visual reperesnetation of correct and wrong answers via the use of Aquamarine and Choclate colors 
   - Note : the Next button is now displayed 
 
-
 - Popup shows right answer 
+
 ![right_answer_popup](readme.doc/right_answer_popup.png)
 
 - Popup shows wrong answer
@@ -168,6 +168,22 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
 ![wrong_answer](readme.doc/wrong_answer.png)
 
+## Shuffle a given array using Fisher–Yates shuffle Algorithm
+
+- randomArray(array) shuffles the array in a truly random way, making the order unpredictable. 
+  - This is used for:Randomizing the order of questions at the start of the quiz.
+  - Randomizing the answer choices for each question. 
+
+![quiz_landing+page](readme.doc/quiz_landing_page.png)
+
+- Screenshot below shows that question 1 has been reshuffled 
+
+![question_1_changed](readme.doc/question_1_changed.png)
+
+
+- Screenshot below shows that question 1 is now question 4 and answers have been reshuffled.
+
+![question_answer_reshuffle](readme.doc/question_answer_reshuffle.png)
 
 ## Images
 
@@ -246,70 +262,79 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 ![css_validation](readme.doc/css_validation.png)
 
 - JSHINT 
-   -No errors were found when tested throgh the jshint testing site 
+   - No errors were found when tested throgh the jshint testing site 
 
-   ![jshint_testing](readme.doc/jshint_testing.png)
+![jshint_testing](readme.doc/jshint_testing.png)
 
 ## Fixed Bugs
 
-  -The script.js was loading twice from HTML file as it was declared twice.However, the site functioned except throwing the error.
-  -The bug was fixed.
+- The script.js was loading twice from HTML file as it was declared twice.However, the site functioned except throwing the error.
+- The bug was fixed.
 
-  ![javascript_syntaxerror](readme.doc/javascript_syntaxerror.png)
+![javascript_syntaxerror](readme.doc/javascript_syntaxerror.png)
 
-  -Syntax error when inspected via the browser
+- Syntax error when inspected via the browser
 
-  ![script_js_deployed_twice](readme.doc/script_js_deployed_twice.png)
+![script_js_deployed_twice](readme.doc/script_js_deployed_twice.png)
 
 
 ## Deployment
 
-### deployment from GitHub
+### Deployment from GitHub
 
-  -The site was deployed to GitHub pages as below.  
-  -In the GitHub repository,navigate to the Settings tab,select pages,and change **Branch**to main hub from none.
+- The site was deployed to GitHub pages as below.  
+- In the GitHub repository,navigate to the Settings tab,select pages,and change **Branch**to main hub from none.
 
-  ![select_branch_github_deployment](readme.doc/select_branch_github_deployment.png)
+![select_branch_github_deployment](readme.doc/select_branch_github_deployment.png)
 
-  -From the Actions tab, select Deployment to check deployment status and capture external link.
+- From the Actions tab, select Deployment to check deployment status and capture external link.
 
-  ![github_page_deployment](readme.doc/github_page_deployment.png)
+![github_page_deployment](readme.doc/github_page_deployment.png)
 
-  -Once the main branch has been selected, the page will automatically refresh to indicate the successful deployment. 
+- Once the main branch has been selected, the page will automatically refresh to indicate the successful deployment. 
 
-  -The live link can be found here - https://bobrac3023.github.io/Project2-Quiz/
+- The live link can be found here - https://bobrac3023.github.io/Project2-Quiz/
 
-### deployment from gitpod
+### Deployment from gitpod
 
-  -Site deployed from Gitpod using python http server 
+- Site deployed from Gitpod using python http server 
 
-  ![python3_http_server](readme.doc/python3_http_server.png)
+![python3_http_server](readme.doc/python3_http_server.png)
 
-  -website viewed from Code Institute IDE Enviroment 
+- website viewed from Code Institute IDE Enviroment 
 
-  ![website_code_ide_environment](readme.doc/website_code_ide_environment.png)
+![website_code_ide_environment](readme.doc/website_code_ide_environment.png)
 
-  -use gitpod commands to add, commit code to gitub repository
+- website viewed from vscode on desktop
 
-  ![git_add_commit_command](readme.doc/git_add_commit_commands.png)
+![localhost_vscode](readme.doc/localhost_vscode.png)
 
-  -gitpod push command to push commited changes to github repository
+![vscode_terminal](readme.doc/vscode_terminal.png)
 
-  ![git_push](readme.doc/git_push.png)
+## Saving to GitHub
+
+- use commands to add, commit code to gitub repository
+
+![git_add_commit_command](readme.doc/git_add_commit_commands.png)
+
+- gitpod push command to push commited changes to github repository
+
+![git_push](readme.doc/git_push.png)
 
 ## Credits 
 
-  -Extra help to understand key Javascript scripts (https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37).  
-  -Understand how to design the quiz (https://www.sitepoint.com/simple-javascript-quiz/).  
-  -Understand var and const declarations (https://www.giraffeacademy.com/web-development/javascript/building-a-quiz/).
+- Extra help to understand key Javascript scripts (https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37).  
+- Understand how to design the quiz (https://www.sitepoint.com/simple-javascript-quiz/).  
+- Understand var and const declarations (https://www.giraffeacademy.com/web-development/javascript/building-a-quiz/).
+- Understand "Shuffle a given array using Fisher–Yates shuffle Algorithm" (https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/)
 
-### Content 
+## Content 
 
-  -How to design, structure and write code instructions taken from (https://www.youtube.com/watch?v=PBcqGxrr9g8).  
-  -The icons in the footer and header were taken from [Font Awesome](https://fontawesome.com/).
+- Ideas on how to design, structure and write code instructions taken from (https://www.youtube.com/watch?v=PBcqGxrr9g8).  
+- The icons in the footer and header were taken from [Font Awesome](https://fontawesome.com/).
 
-### Media
+## Media
 
-  -The photo used for Favicon is from the author's own cat
+- The photo used for Favicon is from the author's own cat
  
 
