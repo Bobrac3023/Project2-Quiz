@@ -263,20 +263,20 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
 ## Validator Testing 
 
-- HTML
+### HTML
   - No errors were returned when passing through the official.[W3c validator](https://validator.w3.org/#validate_by_input)
 
 ![html_validation](readme.doc/html_validator.png)
 
-- CSS
+### CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
 ![css_validation](readme.doc/css_validation.png)
 
-- JSHINT 
+## JSHINT 
    - No errors were found when tested throgh the jshint testing site 
 
-![jshint_testing](readme.doc/jshint_testing.png)
+![jshint_validation](readme.doc/jshint_validation.png)
 
 ## Fixed Bugs
 
