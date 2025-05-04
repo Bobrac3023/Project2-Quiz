@@ -25,15 +25,26 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
  -  Extensive use of commands like **GetElement**, **innerHTML**, **classlists**.  
  -  Overall the flow of code is kept simple and **relevant comments** provided for better understanding and **intepretation**.  
 
+ ## Quiz flow explained in simple steps 
 
+ - Page loads → initiateQuiz() function starts 
+ - The user is show A question and 4 answers.
+ - The User clicks an answer:
+    - If correct: The option is highlted with an Aquamarine  + score increases.
+    - If wrong:  The option is highlighted with choclate + correct answer with Aquamarine + score increases.
+ - NEXT ==>” button appears → moves to the next question.
+ - At the end: score is shown with an option to “Play Again”.
+ 
+
+![quiz_flowchart](readme.doc/quiz_flowchart.png)
 ### Existing Features
 
 - __File_structure__
 
-  -Three main project files created using statndard naming conventions.  
-  -**index.html** for HTML,**style.css** for CSS and **script.js** for Javascript.
-  -assets folder holds tthe **css**, **images** and **js** sub-folders.  
-  -Images for favicon stored in **images** sub-folder and readme images stored in **readme.doc**  
+    - Three main project files created using statndard naming conventions.  
+    - **index.html** for HTML,**style.css** for CSS and **script.js** for Javascript.
+    - assets folder holds tthe **css**, **images** and **js** sub-folders.  
+    - Images for favicon stored in **images** sub-folder and readme images stored in **readme.doc**  
 
 
 - __Head_element__
