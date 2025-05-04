@@ -30,8 +30,8 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
  - Page loads → initiateQuiz() function starts 
  - The user is show A question and 4 answers.
  - The User clicks an answer:
-    - If correct: The option is highlted with an Aquamarine  + score increases.
-    - If wrong:  The option is highlighted with choclate + correct answer with Aquamarine + score increases.
+    - If correct: The option is highlted with an Aquamarine colour   + score increases.
+    - If wrong:  The option is highlighted with choclate colour + correct answer with Aquamarine + score increases.
  - NEXT ==>” button appears → moves to the next question.
  - At the end: score is shown with an option to “Play Again”.
  
@@ -82,13 +82,16 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
   - The footer is valuable to the user as it encourages them to keep connected via social media.  
   - All links were tested and found to be working fine. 
 
-  ![Footer](readme.doc/footer.png)
+![Footer](readme.doc/footer.png)
 
 
-  ![footer_icon_on_hover](/workspace/Project2-Quiz/readme.doc/footer_icon_on_hover.png)
+- When the mouse is hovered over a footer social media icon 
 
+![footer_icon_on_hover](readme.doc/footer_icon_on_hover.png)
 
-  ![facebook_social_media_link](readme.doc/facebook_social_media_link.png)
+- When the user click on the facebook icon on the footer bar
+
+![facebook_social_media_link](readme.doc/facebook_social_media_link.png)
 
 
 ## HTML Main Quiz Section
@@ -111,7 +114,7 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 - The button element is referenced by id **next-button** to enable users to navigate to next set of questions.  
 - Javascript accesses the button to display the **Play-again** button at the end of the quiz.  
   
-  ![quiz section](readme.doc/quiz_area.png)
+![quiz section](readme.doc/quiz_area.png)
 
 
 ## Script js section
@@ -135,32 +138,52 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 - The elements thus referenced are used to create new Elements, append or remove child elemetns and change the innerHTML content.
     
 
-## Code Validation 
+## Javasecript Function Validation.
 
-  -Code validation of Javascript function **initiateQuiz**
+- This is main landing page when for the user.
+- This is where the initiateQuiz( ) , displayQuestion( ), callAnswers( ) functions are validated.
+- The user is presented with a question and 4 options.
+- Note : the Next button is not diisplayed 
 
-  ![python_tutor_code_visualization](readme.doc/python_tutor_code_visualization.png)
+![quiz_landing+page](readme.doc/quiz_landing_page.png)
 
-  -Javascript code validation of array and object literals 
+- This is where selectChoice( ) function is validated 
+  - A popup shows to inform the user if the answer selected is right or wrong
+  - Visual reperesnetation of correct and wrong answers via the use of Aquamarine and Choclate colors 
+  - Note : the Next button is now displayed 
 
-  ![python_validation_array](readme.doc/python_validation_array.png)
+
+- Popup shows right answer 
+![right_answer_popup](readme.doc/right_answer_popup.png)
+
+- Popup shows wrong answer
+
+![wrong_answer_popup](readme.doc/wrong_answer_popup.png)
+
+- Right answer diaplyed in Aquamarine colour
+
+![right_annswer](readme.doc/right_answer.png)
+
+- Wrong answer displayed in choclate colour
+
+![wrong_answer](readme.doc/wrong_answer.png)
 
 
-- __Images__
+## Images
 
-  -The images referenced in this readme file are stored in readme.doc file.
-  -The Favicon is also stored in this file. 
+- The images referenced in this readme file are stored in readme.doc file.
+- The Favicon is also stored in this file. 
    
 
-  ![favicon](readme.doc/dodger.png)
+![favicon](readme.doc/dodger.png)
 
 
-### Features Left to Implement
+## Features Left to Implement
 
-  -A timer for approximately 15 mins.  
-  -A progress bar.  
-  -With a score of all correct, the user is presented with **right answers** and a clickable link to an external Wikipedia page.  
-  -Once user gets all 5 questions right, throw up a new set of questions and the fun continues.  
+- A timer for approximately 15 mins.  
+- A progress bar.  
+- With a score of all correct, the user is presented with **right answers** and a clickable link to an external Wikipedia page.  
+- Once user gets all 5 questions right, throw up a new set of questions and the fun continues.  
   
       
 
@@ -168,65 +191,66 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 ## Testing 
 
 ### Manual testing 
-  -various manual tests were carried out to understand how the project functions. 
 
-  -Asus Laptop with a screensize of 1920x1080
+- various manual tests were carried out to understand how the project functions. 
 
-  ![laptop_1920_external](readme.doc/laptop_1920_external.png) 
+- Asus Laptop with a screensize of 1920x1080
 
-  -Asus Laptop with a screensize of 1920x1080  **visual represetation by Color change for selected answer** 
+![quiz_landing_page](readme.doc/quiz_landing_page.png) 
 
-  ![colcor_change_right_answer](readme.doc/color_change_right_answer_laptop.png)
+- Asus Laptop with a screensize of 1920x1080  **visual represetation by Color change for selected answer** 
 
-  -Asus Laptop with a screensize of 1920x1080  **Pop up after user selects right answer** 
+![colcor_change_right_answer](readme.doc/color_change_right_answer_laptop.png)
 
-  ![right_answer_popup_laptop](readme.doc/right_answer_popup_laptop.png)
+- Asus Laptop with a screensize of 1920x1080  **Pop up after user selects right answer** 
 
-  -Asus Laptop with a screensize of 1920x1080-  **visual represetation by Color chang when user selects wrong answer**
+![right_answer_popup_laptop](readme.doc/right_answer_popup_laptop.png)
 
-  ![color_change_wrong_answer_laptop](readme.doc/color_change_wrong_answer_laptop.png)
+- Asus Laptop with a screensize of 1920x1080-  **visual represetation by Color change when user selects wrong answer**
 
-  -Samsung mobile A54 **User opens link on mobile**
+![color_change_wrong_answer_laptop](readme.doc/color_change_wrong_answer_laptop.png)
 
-  ![samsung_quiz_main](readme.doc/samung_quiz_main.png)
+- Samsung mobile A54 **User opens link on mobile**
 
-  -Samsung mobile A54 **User clicks correct answer**
+![samsung_quiz_main](readme.doc/samung_quiz_main.png)
 
-  ![user_click_right](readme.doc/samsung_user_click_right.png)
+- Samsung mobile A54 **User clicks correct answer**
+
+![user_click_right](readme.doc/samsung_user_click_right.png)
  
-  -Samsung mobile A54 **User clicks wrong answer**
+- Samsung mobile A54 **User clicks wrong answer**
 
-  ![user_click_wrong](readme.doc/samsung_user_click_wrong.png)
+![user_click_wrong](readme.doc/samsung_user_click_wrong.png)
 
-  -Samsung mobile A54 **Final score on completion of quiz**
+- Samsung mobile A54 **Final score on completion of quiz**
 
-  ![user_quiz_completion](readme.doc/samsung_quiz_completion.png)
+![user_quiz_completion](readme.doc/samsung_quiz_completion.png)
 
 ### Browser inspection
 
-  -Code inspected in Chrome browser during execution.
+- Code inspected in Chrome browser during execution.
 
-  ![inspect_code_browser](readme.doc/inspect_code_browser.png)
+![inspect_code_browser](readme.doc/inspect_code_browser.png)
 
 
-### Validator Testing 
+## Validator Testing 
 
 - HTML
-   -No errors were returned when passing through the official.[W3c validator](https://validator.w3.org/#validate_by_input)
+  - No errors were returned when passing through the official.[W3c validator](https://validator.w3.org/#validate_by_input)
 
-   ![html_validation](readme.doc/html_validator.png)
+![html_validation](readme.doc/html_validator.png)
 
 - CSS
-   -No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
-   ![css_validation](readme.doc/css_validation.png)
+![css_validation](readme.doc/css_validation.png)
 
 - JSHINT 
    -No errors were found when tested throgh the jshint testing site 
 
    ![jshint_testing](readme.doc/jshint_testing.png)
 
-### fixed Bugs
+## Fixed Bugs
 
   -The script.js was loading twice from HTML file as it was declared twice.However, the site functioned except throwing the error.
   -The bug was fixed.
