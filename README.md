@@ -171,8 +171,20 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 ## Shuffle a given array using Fisher–Yates shuffle Algorithm
 
 - randomArray(array) shuffles the array in a truly random way, making the order unpredictable. 
-  - This is used for:Randomizing the order of questions at the start of the quiz.
-  - Randomizing the answer choices for each question. 
+  - This is used for:
+    - Randomizing the order of questions at the start of the quiz.
+    - Randomizing the answer choices for each question. 
+
+-  Shuffle function explaination 
+    - Start from the last element.
+    - Pick a random element before it (including itself).
+    - Swap them.
+    - Move one step backward.
+    - Repeat until the whole array is shuffled!
+
+- Pictorial represetnation of the Shuffle function 
+
+![shuffle](readme.doc/shuffle.png)
 
 ![quiz_landing+page](readme.doc/quiz_landing_page.png)
 
