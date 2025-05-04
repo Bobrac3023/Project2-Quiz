@@ -37,87 +37,50 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
  
 
 ![quiz_flowchart](readme.doc/quiz_flowchart.png)
-### Existing Features
 
-- __File_structure__
+## Existing Features
 
-    - Three main project files created using statndard naming conventions.  
-    - **index.html** for HTML,**style.css** for CSS and **script.js** for Javascript.
-    - assets folder holds tthe **css**, **images** and **js** sub-folders.  
-    - Images for favicon stored in **images** sub-folder and readme images stored in **readme.doc**  
+### File_structure
+
+- Three main project files created using statndard naming conventions.
+- **index.html** for HTML,**style.css** for CSS and **script.js** for Javascript.
+- Assets folder holds tthe **css**, **images** and **js** sub-folders.
+- Images for favicon stored in **images** sub-folder and readme images stored in **readme.doc**  
 
 
-- __Head_element__
+## Head_element
 
-  -Language for the website is **US English**.  
-  -Meta tags and viewport included to make page responsive.  
-  -Author and keywords included for serach engine optimization.  
-  -Links to favicon and CSS stylesheet includded.  
-  -**favicon** details includes three different screen sizes.  
-  -The title **Blue Heaven Quiz Master** defined here.  
+  - Language for the website is **US English**.  
+  - Meta tags and viewport included to make page responsive.  
+  - Author and keywords included for serach engine optimization.  
+  - Links to favicon and CSS stylesheet includded.  
+  - **favicon** details includes three different screen sizes.  
+  - The title **Blue Heaven Quiz Master** defined here.  
 
   ![head_element](readme.doc/head_element.png)
 
-- __Header__
+### Header
          
-  -The Header contains the **H1** nested inside the **Body** element.  
-  -It displays a logo of a **piece of puzzle** downloaded from fontawesome website.  
+  - The Header contains the **H1** nested inside the **Body** element.  
+  - It displays a logo of a **piece of puzzle** downloaded from fontawesome website.  
 
   ![header](readme.doc/header.png)
    
-- __Navigation Bar__
+### Navigation Bar
    
-  -The navigation bar design features one unordered list that is fully responsive.  
-  -The responsive navigation bar includes links to the Logo of a **home** downloaded from **fontawesome** website. 
+  - The navigation bar design features one unordered list that is fully responsive.  
+  - The responsive navigation bar includes links to the Logo of a **home** downloaded from **fontawesome** website. 
 
   ![navbar](readme.doc/nav_bar.png)
 
+## The Footer 
 
-- __HTML Main Quiz Section__
-
-  -The **main quiz section** is divied into **div elements**,**h2 elements**, **paragraph element** and  **button** element.  
-  -Immediate child elements **h2** and the **p element** are configured to provide the **quiz information** including instructions.  
-  -A child **div** referenced by class **question-area** displays questions through a child **h2** referenced from Javascript by **id="quiz"**.  
-  -Another div is referenced by id **answer-buttons**, designed to display the answers from the **object literals** defined in Javascript.  
-  -The button element is referenced by id **next-button** to enable users to navigate to next set of questions.  
-  -Javascript accesses the button to dipslay the **Play-again** button at the end of the quiz.  
-  
-  ![quiz section](readme.doc/quiz_area.png)
-
-
-- __script js section__
-
-  -As the emphasis of this project is on Javascript, it has been used extendsively to manipulate the HTML elements.  
-  -There are a multiple functions that are part of the script. 
-  -Each function is explained below.  
-      -initiateQuiz- This function is to inititae the quiz.  
-      -displayQuestion- This function will display the questions from the array and answer options from object lterals.  
-      -resetState- to remove previous child elements.  
-      -selectChoice- Actions to carry once user clicks on a particular answer.  
-      -showScore- Actions to display final score.  
-      -handleNextButton- Actions to take each time user clicks the **Next** button.  
-  -Constant variables declared outside the function at global level are referenced from within the function to manipulate the DOM and create, remove, append HTML elements.  
-  -The logic inside many of the functions is to reference the functional( defied with the local scope) or global constants, get Elements by their id, class or tag name and them manipulate them.  
-  -The elements thus referenced are used to create new Elements, append or remove child elemetns and change the innerHTML content.
-    
-
-
-  -Code validation of Javascript function **initiateQuiz**
-
-  ![python_tutor_code_visualization](readme.doc/python_tutor_code_visualization.png)
-
-  -Javascript code validation of array and object literals 
-
-  ![python_validation_array](readme.doc/python_validation_array.png)
-
-- __The Footer__ 
-
-  -The footer section includes links to the relevant social media sites for facebook, instagram, youtube and linkdeln.  
-  -For this project, they default to the login page of each social media icon.  
-  -All fonts were used from fontawesome website along with the reference links.  
-  -The links will open to a new tab to allow easy navigation for the user.  
-  -The footer is valuable to the user as it encourages them to keep connected via social media.  
-  -All links were tested and found to be working fine. 
+  - The footer section includes links to the relevant social media sites for facebook, instagram, youtube and linkdeln.  
+  - For this project, they default to the login page of each social media icon.  
+  - All fonts were used from fontawesome website along with the reference links.  
+  - The links will open to a new tab to allow easy navigation for the user.  
+  - The footer is valuable to the user as it encourages them to keep connected via social media.  
+  - All links were tested and found to be working fine. 
 
   ![Footer](readme.doc/footer.png)
 
@@ -126,6 +89,61 @@ The quiz should tickle one's curiosity, to understand the roles played by these 
 
 
   ![facebook_social_media_link](readme.doc/facebook_social_media_link.png)
+
+
+## HTML Main Quiz Section
+
+#### HTML Element References
+- const questionButton = document.getElementById("quiz");
+- const answerButton = document.getElementById("answer-buttons");
+- const nextButton = document.getElementById("next-button");
+
+- These correspond to DOM elements:
+    - quiz: where the question text will show.
+    - answer-buttons: where answer options (buttons) go.
+    - next-button: for advancing through the quiz.
+
+
+- The **main quiz section** is divied into **div elements**,**h2 elements**, **paragraph element** and  **button** element.  
+- Immediate child elements **h2** and the **p element** are configured to provide the **quiz information** including instructions.  
+- A child **div** referenced by class **question-area** displays questions through a child **h2** referenced from Javascript by **id="quiz"**.  
+- Another div is referenced by id **answer-buttons**, designed to display the answers from the **object literals** defined in Javascript.  
+- The button element is referenced by id **next-button** to enable users to navigate to next set of questions.  
+- Javascript accesses the button to display the **Play-again** button at the end of the quiz.  
+  
+  ![quiz section](readme.doc/quiz_area.png)
+
+
+## Script js section
+
+- As the emphasis of this project is on Javascript, it has been used extendsively to manipulate the HTML elements.  
+- There are a multiple functions that are part of the script. 
+- Each function is explained below.  
+    1. randomArray(array) shuffles the array in a truly random way, making the order unpredictable. 
+        -   This is used for:Randomizing the order of questions at the start of the quiz.
+        -   Randomizing the answer choices for each question. 
+    2. initiateQuiz( )- resets the quiz state, shuffles the questions, hides the "Next" button, and displays the first question — essentially preparing the quiz for a fresh start.
+    3. displayQuestion( )- shows a new quiz question, clears the previous state, gets the current question and choices, shuffles them, and updates the UI accordingly.This function will display the questions from the array and answer options from object literals. 
+    4. callAnswers( ) dynamically creates styled answer buttons from the given choices, embeds correctness info if available, displays them in the UI, and attaches click handling logic. 
+    5. selectChoice( ) checks if the selected answer is right or wrong, shows visual feedback, disables further input, reveals the correct answer, and enables the user to proceed.
+    6. resetState( )- to remove previous child elements. 
+    7. showScore( )- Actions to display final score. Repurpose the "Next" button as a "Play Again" option. 
+    8. handleNextButton( )- moves to the next question or ends the quiz and shows the score, depending on whether there are questions left.  
+
+- Constant variables declared outside the function at global level are referenced from within the function to manipulate the DOM and create, remove, append HTML elements.  
+- The logic inside many of the functions is to reference the functional( defied with the local scope) or global constants, get Elements by their id, class or tag name and them manipulate them.  
+- The elements thus referenced are used to create new Elements, append or remove child elemetns and change the innerHTML content.
+    
+
+## Code Validation 
+
+  -Code validation of Javascript function **initiateQuiz**
+
+  ![python_tutor_code_visualization](readme.doc/python_tutor_code_visualization.png)
+
+  -Javascript code validation of array and object literals 
+
+  ![python_validation_array](readme.doc/python_validation_array.png)
 
 
 - __Images__
